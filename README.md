@@ -8,6 +8,34 @@
 
 ---
 
+## 🗺️ Learning Flow
+
+```mermaid
+flowchart LR
+    A[Chapter 01<br/>Playwright Basics] --> B[Chapter 02<br/>JS Concepts]
+    B --> C[Chapter 03<br/>JS Identifier & Literals]
+    C --> D[VS Code Shortcuts]
+    
+    A --> A1["✅ 01_Basics.js"]
+    A --> A2["✅ 02_JS_Verify_Setup.js"]
+    A --> A3["✅ 03_JS.js"]
+    A --> A4["✅ 04_HotCode.js"]
+    
+    B --> B1["✅ 05_JS_Basics.js"]
+    
+    C --> C1["✅ Identifier Rules"]
+    C --> C2["✅ Case Rules"]
+    C --> C3["✅ Comments"]
+    C --> C4["✅ Identifier Rules (extra)"]
+
+    style A fill:#4a90d9,color:#fff
+    style B fill:#50b86c,color:#fff
+    style C fill:#e6a23c,color:#fff
+    style D fill:#a855f7,color:#fff
+```
+
+---
+
 ## 📂 Chapters
 
 | # | Chapter | 📄 Files |
