@@ -15,14 +15,14 @@ flowchart LR
     A[Chapter 01<br/>Playwright Basics] --> B[Chapter 02<br/>JS Concepts]
     B --> C[Chapter 03<br/>JS Identifier & Literals]
     C --> D[VS Code Shortcuts]
-    
+
     A --> A1["✅ 01_Basics.js"]
     A --> A2["✅ 02_JS_Verify_Setup.js"]
     A --> A3["✅ 03_JS.js"]
     A --> A4["✅ 04_HotCode.js"]
-    
+
     B --> B1["✅ 05_JS_Basics.js"]
-    
+
     C --> C1["✅ Identifier Rules"]
     C --> C2["✅ Case Rules"]
     C --> C3["✅ Comments"]
@@ -38,11 +38,11 @@ flowchart LR
 
 ## 📂 Chapters
 
-| # | Chapter | 📄 Files |
-|---|---------|----------|
-| 01 | **Playwright Basics** | `01_Basics.js` · `02_JS_Verify_Setup.js` · `03_JS.js` · `04_HotCode.js` |
-| 02 | **JS Concepts** | `05_JS_Basics.js` |
-| 03 | **JS Identifier & Literals** | `06_Identifier_Rules.js` · `07_Identifier_Case_Rules.js` · `08_Comments.js` · `js_identifier_rules.js` · `VS_Code_shortcuts_mac.md` · `VS_Code_shortcuts_windows.md` |
+| #   | Chapter                      | 📄 Files                                                                                                                                                             |
+| --- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01  | **Playwright Basics**        | `01_Basics.js` · `02_JS_Verify_Setup.js` · `03_JS.js` · `04_HotCode.js`                                                                                              |
+| 02  | **JS Concepts**              | `05_JS_Basics.js`                                                                                                                                                    |
+| 03  | **JS Identifier & Literals** | `06_Identifier_Rules.js` · `07_Identifier_Case_Rules.js` · `08_Comments.js` · `js_identifier_rules.js` · `VS_Code_shortcuts_mac.md` · `VS_Code_shortcuts_windows.md` |
 
 ---
 
@@ -50,9 +50,9 @@ flowchart LR
 
 Quick reference guides for **Mac** and **Windows**:
 
-| Platform | File |
-|----------|------|
-| 🍎 Mac | [`VS_Code_shortcuts_mac.md`](Chapter_03_JS_Identifier_Literals/VS_Code_shortcuts_mac.md) |
+| Platform   | File                                                                                             |
+| ---------- | ------------------------------------------------------------------------------------------------ |
+| 🍎 Mac     | [`VS_Code_shortcuts_mac.md`](Chapter_03_JS_Identifier_Literals/VS_Code_shortcuts_mac.md)         |
 | 🪟 Windows | [`VS_Code_shortcuts_windows.md`](Chapter_03_JS_Identifier_Literals/VS_Code_shortcuts_windows.md) |
 
 ---
@@ -66,5 +66,5 @@ Quick reference guides for **Mac** and **Windows**:
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by Hema Latha</sub>
+  <sub>Built with ❤️ by Hemalatha</sub>
 </div>
