@@ -53,6 +53,40 @@ flowchart LR
 
 ---
 
+## 📁 Folder Structure
+
+```
+Playwright/
+├── README.md
+├── .gitignore
+├── Chapter_01_Basics/
+│   ├── 01_Basics.js
+│   ├── 02_JS_Verify_Setup.js
+│   ├── 03_JS.js
+│   └── 04_HotCode.js
+├── Chapter_02_JS_Concepts/
+│   └── 05_JS_Basics.js
+├── Chapter_03_JS_Identifier_Literals/
+│   ├── 06_Identifier_Rules.js
+│   ├── 07_Identifier_Case_Rules.js
+│   ├── 08_Comments.js
+│   ├── js_identifier_rules.js
+│   ├── VS_Code_shortcuts_mac.md
+│   └── VS_Code_shortcuts_windows.md
+└── Chapter_04_JavaConcepts/
+    ├── 09_var_let_const.js
+    ├── 10_functions.js
+    ├── 11_var_explained.js
+    ├── 12_let_people_love.js
+    ├── 13_const_explained.js
+    ├── 14_var_functionscope.js
+    ├── 15_let_scope.js
+    ├── 16_Hoisting.js
+    └── 17_hoisting_fn.js
+```
+
+---
+
 ## ⌨️ VS Code Shortcuts
 
 Quick reference guides for **Mac** and **Windows**:
