@@ -15,7 +15,8 @@ flowchart LR
     A[Chapter 01<br/>Playwright Basics] --> B[Chapter 02<br/>JS Concepts]
     B --> C[Chapter 03<br/>JS Identifier & Literals]
     C --> D[Chapter 04<br/>Java Concepts]
-    D --> E[VS Code Shortcuts]
+    D --> E[Chapter 05<br/>Literals]
+    E --> F[VS Code Shortcuts]
 
     A --> A1["✅ 01_Basics.js"]
     A --> A2["✅ 02_JS_Verify_Setup.js"]
@@ -33,11 +34,15 @@ flowchart LR
     D --> D2["✅ Functions"]
     D --> D3["✅ Hoisting"]
 
+    E --> E1["✅ Literals"]
+    E --> E2["✅ Template Literals"]
+
     style A fill:#4a90d9,color:#fff
     style B fill:#50b86c,color:#fff
     style C fill:#e6a23c,color:#fff
     style D fill:#a855f7,color:#fff
-    style E fill:#e74c3c,color:#fff
+    style E fill:#e67e22,color:#fff
+    style F fill:#e74c3c,color:#fff
 ```
 
 ---
@@ -50,6 +55,7 @@ flowchart LR
 | 02  | **JS Concepts**              | `05_JS_Basics.js`                                                                                                                                                    |
 | 03  | **JS Identifier & Literals** | `06_Identifier_Rules.js` · `07_Identifier_Case_Rules.js` · `08_Comments.js` · `js_identifier_rules.js` · `VS_Code_shortcuts_mac.md` · `VS_Code_shortcuts_windows.md` |
 | 04  | **Java Concepts**            | `09_var_let_const.js` · `10_functions.js` · `11_var_explained.js` · `12_let_people_love.js` · `13_const_explained.js` · `14_var_functionscope.js` · `15_let_scope.js` · `16_Hoisting.js` · `17_hoisting_fn.js` |
+| 05  | **Literals**                 | `22_Literal.js` · `23_null_undefined.js` · `24_null.js` · `25_Literal_All.js` · `26_Literal_Number_all.js` · `27_String.js` · `28_Template_Literal.js` · `29_Backtick_single_double.js` |
 
 ---
 
@@ -73,16 +79,29 @@ Playwright/
 │   ├── js_identifier_rules.js
 │   ├── VS_Code_shortcuts_mac.md
 │   └── VS_Code_shortcuts_windows.md
-└── Chapter_04_JavaConcepts/
-    ├── 09_var_let_const.js
-    ├── 10_functions.js
-    ├── 11_var_explained.js
-    ├── 12_let_people_love.js
-    ├── 13_const_explained.js
-    ├── 14_var_functionscope.js
-    ├── 15_let_scope.js
-    ├── 16_Hoisting.js
-    └── 17_hoisting_fn.js
+├── Chapter_04_JavaConcepts/
+│   ├── 09_var_let_const.js
+│   ├── 10_functions.js
+│   ├── 11_var_explained.js
+│   ├── 12_let_people_love.js
+│   ├── 13_const_explained.js
+│   ├── 14_var_functionscope.js
+│   ├── 15_let_scope.js
+│   ├── 16_Hoisting.js
+│   ├── 17_hoisting_fn.js
+│   ├── 18_let_hoisting.js
+│   ├── 19_let_hoisting_block.js
+│   ├── 20_let_const.js
+│   └── 21_Jr_QA.js
+└── Chapter_05_Literal/
+    ├── 22_Literal.js
+    ├── 23_null_undefined.js
+    ├── 24_null.js
+    ├── 25_Literal_All.js
+    ├── 26_Literal_Number_all.js
+    ├── 27_String.js
+    ├── 28_Template_Literal.js
+    └── 29_Backtick_single_double.js
 ```
 
 ---
