@@ -138,6 +138,53 @@ Playwright/
 
 ---
 
+## 📖 Key Concepts by Chapter
+
+### Chapter 01 — Playwright Basics
+- `console.log()` for output and debugging
+- `process.platform`, `process.arch`, `process.version` — verifying Node.js setup
+- Variable declaration with `let`
+- Function definition and `for` loop iteration
+
+### Chapter 02 — JS Concepts
+- `var` declaration, reassignment, and global leakage
+
+### Chapter 03 — JS Identifier & Literals
+- **Identifier rules**: must start with letter, `_`, or `$`; case-sensitive; no reserved keywords; no spaces
+- **Casing conventions**: camelCase, snake_case, PascalCase, SCREAMING_SNAKE_CASE, Hungarian notation
+- **Comments**: single-line (`//`), multi-line (`/* */`), JSDoc (`/** */`)
+- Unicode characters allowed in identifiers
+
+### Chapter 04 — Java Concepts (Variables & Functions)
+- `var` — function-scoped, can be redeclared & reassigned
+- `let` — block-scoped, cannot be redeclared but can be reassigned
+- `const` — block-scoped, must be initialized, cannot be reassigned
+- **Hoisting**: `var` declarations hoisted with `undefined`; `let`/`const` hoisted but in Temporal Dead Zone (TDZ)
+- Function definition vs invocation
+
+### Chapter 05 — Literals
+- **String literals**: single quotes (`'`), double quotes (`"`)
+- **Numeric literals**: integer, float, binary (`0b`), octal (`0o`), hex (`0xFF`), scientific, BigInt (`n`), underscores for readability
+- **Boolean literals**: `true` / `false`
+- **`null`** (intentional empty) vs **`undefined`** (uninitialized)
+- **Template literals**: backticks with `${}` interpolation, multi-line strings
+- `typeof` operator for type checking
+
+### Chapter 06 — Operators
+- **Assignment**: `=`
+- **Arithmetic**: `+`, `-`, `*`, `/`, `%` (modulus), `**` (exponentiation)
+- **Compound**: `+=`, `-=`, `*=`, `/=`, `%=`
+- **Comparison**: `>`, `<`, `>=`, `<=`
+- **Equality**: `==` (loose — coerces types), `===` (strict — checks type + value), `!=`, `!==`
+- **Logical**: `&&` (AND), `||` (OR), `!` (NOT)
+- **String concat**: `+`
+- **Ternary**: `condition ? expr1 : expr2`
+- **Type**: `typeof`
+- **Increment / Decrement**: `++`, `--`
+- **Nullish coalescing**: `??`
+
+---
+
 ## ⌨️ VS Code Shortcuts
 
 Quick reference guides for **Mac** and **Windows**:
