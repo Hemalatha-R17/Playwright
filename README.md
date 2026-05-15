@@ -140,48 +140,69 @@ Playwright/
 
 ## 📖 Key Concepts by Chapter
 
-### Chapter 01 — Playwright Basics
-- `console.log()` for output and debugging
-- `process.platform`, `process.arch`, `process.version` — verifying Node.js setup
-- Variable declaration with `let`
-- Function definition and `for` loop iteration
-
-### Chapter 02 — JS Concepts
-- `var` declaration, reassignment, and global leakage
-
-### Chapter 03 — JS Identifier & Literals
-- **Identifier rules**: must start with letter, `_`, or `$`; case-sensitive; no reserved keywords; no spaces
-- **Casing conventions**: camelCase, snake_case, PascalCase, SCREAMING_SNAKE_CASE, Hungarian notation
-- **Comments**: single-line (`//`), multi-line (`/* */`), JSDoc (`/** */`)
-- Unicode characters allowed in identifiers
-
-### Chapter 04 — Java Concepts (Variables & Functions)
-- `var` — function-scoped, can be redeclared & reassigned
-- `let` — block-scoped, cannot be redeclared but can be reassigned
-- `const` — block-scoped, must be initialized, cannot be reassigned
-- **Hoisting**: `var` declarations hoisted with `undefined`; `let`/`const` hoisted but in Temporal Dead Zone (TDZ)
-- Function definition vs invocation
-
-### Chapter 05 — Literals
-- **String literals**: single quotes (`'`), double quotes (`"`)
-- **Numeric literals**: integer, float, binary (`0b`), octal (`0o`), hex (`0xFF`), scientific, BigInt (`n`), underscores for readability
-- **Boolean literals**: `true` / `false`
-- **`null`** (intentional empty) vs **`undefined`** (uninitialized)
-- **Template literals**: backticks with `${}` interpolation, multi-line strings
-- `typeof` operator for type checking
-
-### Chapter 06 — Operators
-- **Assignment**: `=`
-- **Arithmetic**: `+`, `-`, `*`, `/`, `%` (modulus), `**` (exponentiation)
-- **Compound**: `+=`, `-=`, `*=`, `/=`, `%=`
-- **Comparison**: `>`, `<`, `>=`, `<=`
-- **Equality**: `==` (loose — coerces types), `===` (strict — checks type + value), `!=`, `!==`
-- **Logical**: `&&` (AND), `||` (OR), `!` (NOT)
-- **String concat**: `+`
-- **Ternary**: `condition ? expr1 : expr2`
-- **Type**: `typeof`
-- **Increment / Decrement**: `++`, `--`
-- **Nullish coalescing**: `??`
+<table>
+<tr>
+  <td width="18%" align="center"><h3>📘<br>Ch 01<br>Basics</h3></td>
+  <td width="82%">
+    <code>console.log()</code> ·
+    <code>process.platform</code> ·
+    <code>process.arch</code> ·
+    <code>process.version</code> ·
+    <code>let</code> ·
+    function definition ·
+    <code>for</code> loop
+  </td>
+</tr>
+<tr>
+  <td width="18%" align="center"><h3>📗<br>Ch 02<br>JS Concepts</h3></td>
+  <td width="82%">
+    <code>var</code> declaration ·
+    reassignment ·
+    global leakage
+  </td>
+</tr>
+<tr>
+  <td width="18%" align="center"><h3>📙<br>Ch 03<br>Identifier &<br>Literals</h3></td>
+  <td width="82%">
+    <b>Identifier rules</b>: letter/<code>_</code>/<code>$</code> start, case-sensitive, no keywords/spaces ·
+    <b>Casing</b>: camelCase · snake_case · PascalCase · SCREAMING_SNAKE · Hungarian ·
+    <b>Comments</b>: <code>//</code> · <code>/* */</code> · <code>/** */</code> ·
+    Unicode identifiers
+  </td>
+</tr>
+<tr>
+  <td width="18%" align="center"><h3>🟣<br>Ch 04<br>Variables &<br>Functions</h3></td>
+  <td width="82%">
+    <code>var</code> (function-scoped, redeclarable) ·
+    <code>let</code> (block-scoped, reassignable) ·
+    <code>const</code> (block-scoped, immutable) ·
+    <b>Hoisting</b>: <code>var</code> → <code>undefined</code> · <code>let</code>/<code>const</code> → TDZ ·
+    function definition vs invocation
+  </td>
+</tr>
+<tr>
+  <td width="18%" align="center"><h3>🟠<br>Ch 05<br>Literals</h3></td>
+  <td width="82%">
+    <b>Strings</b>: <code>''</code> · <code>""</code> · <b>``</b> template literals <code>${}</code> ·
+    <b>Numbers</b>: int · float · <code>0b</code> binary · <code>0o</code> octal · <code>0x</code> hex · scientific · BigInt ·
+    <b>Booleans</b>: <code>true</code> / <code>false</code> ·
+    <code>null</code> vs <code>undefined</code> ·
+    <code>typeof</code>
+  </td>
+</tr>
+<tr>
+  <td width="18%" align="center"><h3>🟢<br>Ch 06<br>Operators</h3></td>
+  <td width="82%">
+    <b>Assignment</b>: <code>=</code> · <b>Arithmetic</b>: <code>+ - * / % **</code> ·
+    <b>Compound</b>: <code>+= -= *= /= %=</code> ·
+    <b>Comparison</b>: <code>&gt; &lt; &gt;= &lt;=</code> ·
+    <b>Equality</b>: <code>==</code> loose · <code>===</code> strict · <code>!=</code> <code>!==</code> ·
+    <b>Logical</b>: <code>&amp;&amp;</code> <code>||</code> <code>!</code> ·
+    <b>Ternary</b>: <code>? :</code> ·
+    <code>typeof</code> · <code>++</code> <code>--</code> · <code>??</code> nullish
+  </td>
+</tr>
+</table>
 
 ---
 
