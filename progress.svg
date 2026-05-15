@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="120" viewBox="0 0 440 120">
+  <defs>
+    <linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a90d9"/>
+      <stop offset="100%" stop-color="#2ecc71"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="440" height="120" rx="14" fill="#1e1e2e"/>
+
+  <text x="220" y="35" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#cdd6f4">📚 Course Progress — 6 Chapters</text>
+
+  <rect x="30" y="52" width="380" height="10" rx="5" fill="#313244"/>
+  <rect x="30" y="52" height="10" rx="5" fill="url(#bar)">
+    <animate attributeName="width" from="0" to="380" dur="2s" fill="freeze"/>
+  </rect>
+
+  <g>
+    <circle cx="60" cy="82" r="7" fill="#4a90d9">
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="0.3s"/>
+    </circle>
+    <circle cx="124" cy="82" r="7" fill="#50b86c">
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="0.6s"/>
+    </circle>
+    <circle cx="188" cy="82" r="7" fill="#e6a23c">
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="0.9s"/>
+    </circle>
+    <circle cx="252" cy="82" r="7" fill="#a855f7">
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="1.2s"/>
+    </circle>
+    <circle cx="316" cy="82" r="7" fill="#e67e22">
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="1.5s"/>
+    </circle>
+    <circle cx="380" cy="82" r="7" fill="#2ecc71">
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="1.8s"/>
+    </circle>
+  </g>
+
+  <g>
+    <text x="60" y="102" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#585b70">
+      Ch 1
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="0.3s"/>
+    </text>
+    <text x="124" y="102" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#585b70">
+      Ch 2
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="0.6s"/>
+    </text>
+    <text x="188" y="102" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#585b70">
+      Ch 3
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="0.9s"/>
+    </text>
+    <text x="252" y="102" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#585b70">
+      Ch 4
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="1.2s"/>
+    </text>
+    <text x="316" y="102" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#585b70">
+      Ch 5
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="1.5s"/>
+    </text>
+    <text x="380" y="102" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="10" fill="#585b70">
+      Ch 6
+      <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="1.8s"/>
+    </text>
+  </g>
+</svg>
