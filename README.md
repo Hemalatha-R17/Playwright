@@ -140,69 +140,213 @@ Playwright/
 
 ## 📖 Key Concepts by Chapter
 
-<table>
-<tr>
-  <td width="18%" align="center"><h3>📘<br>Ch 01<br>Basics</h3></td>
-  <td width="82%">
-    <code>console.log()</code> ·
-    <code>process.platform</code> ·
-    <code>process.arch</code> ·
-    <code>process.version</code> ·
-    <code>let</code> ·
-    function definition ·
-    <code>for</code> loop
-  </td>
-</tr>
-<tr>
-  <td width="18%" align="center"><h3>📗<br>Ch 02<br>JS Concepts</h3></td>
-  <td width="82%">
-    <code>var</code> declaration ·
-    reassignment ·
-    global leakage
-  </td>
-</tr>
-<tr>
-  <td width="18%" align="center"><h3>📙<br>Ch 03<br>Identifier &<br>Literals</h3></td>
-  <td width="82%">
-    <b>Identifier rules</b>: letter/<code>_</code>/<code>$</code> start, case-sensitive, no keywords/spaces ·
-    <b>Casing</b>: camelCase · snake_case · PascalCase · SCREAMING_SNAKE · Hungarian ·
-    <b>Comments</b>: <code>//</code> · <code>/* */</code> · <code>/** */</code> ·
-    Unicode identifiers
-  </td>
-</tr>
-<tr>
-  <td width="18%" align="center"><h3>🟣<br>Ch 04<br>Variables &<br>Functions</h3></td>
-  <td width="82%">
-    <code>var</code> (function-scoped, redeclarable) ·
-    <code>let</code> (block-scoped, reassignable) ·
-    <code>const</code> (block-scoped, immutable) ·
-    <b>Hoisting</b>: <code>var</code> → <code>undefined</code> · <code>let</code>/<code>const</code> → TDZ ·
-    function definition vs invocation
-  </td>
-</tr>
-<tr>
-  <td width="18%" align="center"><h3>🟠<br>Ch 05<br>Literals</h3></td>
-  <td width="82%">
-    <b>Strings</b>: <code>''</code> · <code>""</code> · <b>``</b> template literals <code>${}</code> ·
-    <b>Numbers</b>: int · float · <code>0b</code> binary · <code>0o</code> octal · <code>0x</code> hex · scientific · BigInt ·
-    <b>Booleans</b>: <code>true</code> / <code>false</code> ·
-    <code>null</code> vs <code>undefined</code> ·
-    <code>typeof</code>
-  </td>
-</tr>
-<tr>
-  <td width="18%" align="center"><h3>🟢<br>Ch 06<br>Operators</h3></td>
-  <td width="82%">
-    <b>Assignment</b>: <code>=</code> · <b>Arithmetic</b>: <code>+ - * / % **</code> ·
-    <b>Compound</b>: <code>+= -= *= /= %=</code> ·
-    <b>Comparison</b>: <code>&gt; &lt; &gt;= &lt;=</code> ·
-    <b>Equality</b>: <code>==</code> loose · <code>===</code> strict · <code>!=</code> <code>!==</code> ·
-    <b>Logical</b>: <code>&amp;&amp;</code> <code>||</code> <code>!</code> ·
-    <b>Ternary</b>: <code>? :</code> ·
-    <code>typeof</code> · <code>++</code> <code>--</code> · <code>??</code> nullish
-  </td>
-</tr>
-</table>
+<details open>
+<summary><strong>📘 Chapter 01 — Playwright Basics</strong></summary>
+<br>
+
+Introduces foundational JS syntax used alongside Playwright: printing output, verifying the Node.js environment, declaring variables, and writing functions with loops.
+
+```mermaid
+flowchart LR
+    A["let x = 10"] --> B["function add(a,b){...}"]
+    B --> C["for(let i=0; i&lt;n; i++){...}"]
+    C --> D["console.log(result)"]
+    style A fill:#4a90d9,color:#fff
+    style B fill:#4a90d9,color:#fff
+    style C fill:#4a90d9,color:#fff
+    style D fill:#4a90d9,color:#fff
+```
+
+| Concept | Code |
+|---------|------|
+| Output | `console.log("hello")` |
+| Detect OS | `process.platform` / `process.arch` / `process.version` |
+| Variable | `let x = 10` |
+| Function | `function add(a,b){ return a+b }` |
+| Loop | `for(let i=0; i<10; i++){ }` |
+
+</details>
+
+<details open>
+<summary><strong>📗 Chapter 02 — JS Concepts</strong></summary>
+<br>
+
+Covers the older `var` keyword — how it's declared, reassigned, and how it leaks outside block scope (unlike `let`/`const`).
+
+```mermaid
+flowchart LR
+    A["var v = 10"] --> B["v = 12  (reassign)"]
+    B --> C["var v = 20  (redeclare)"]
+    C --> D["Leaks past { } block"]
+    style A fill:#50b86c,color:#fff
+    style B fill:#50b86c,color:#fff
+    style C fill:#50b86c,color:#fff
+    style D fill:#e74c3c,color:#fff
+```
+
+| Concept | Behaviour |
+|---------|-----------|
+| Declaration | `var v = 10` |
+| Reassignment | `v = 12` ✅ |
+| Redeclaration | `var v = 20` ✅ (allowed) |
+| Scope | Function-scoped (leaks out of `{ }`) |
+
+</details>
+
+<details open>
+<summary><strong>📙 Chapter 03 — JS Identifier & Literals</strong></summary>
+<br>
+
+Explores valid JS identifier rules, common naming conventions, and how to write comments for documentation.
+
+```mermaid
+flowchart TD
+    Start["Identifier Name"] --> Q1{"Starts with<br/>letter, _, $ ?"}
+    Q1 -->|No| Bad["❌ Invalid"]
+    Q1 -->|Yes| Q2{"Contains only<br/>letters, digits, _, $ ?"}
+    Q2 -->|No| Bad
+    Q2 -->|Yes| Q3{"Not a reserved<br/>keyword?"}
+    Q3 -->|No| Bad
+    Q3 -->|Yes| Good["✅ Valid"]
+    
+    Good --> Camel["camelCase"]
+    Good --> Snake["snake_case"]
+    Good --> Pascal["PascalCase"]
+    Good --> Scream["SCREAMING_SNAKE"]
+    
+    style Good fill:#50b86c,color:#fff
+    style Bad fill:#e74c3c,color:#fff
+```
+
+| Naming Convention | Example | Use Case |
+|-------------------|---------|----------|
+| **camelCase** | `firstName` | variables, functions |
+| **snake_case** | `first_name` | legacy / Python style |
+| **PascalCase** | `FirstName` | classes, constructors |
+| **SCREAMING_SNAKE** | `API_KEY` | constants |
+| **Hungarian** | `strName`, `isActive` | type-prefixed names |
+
+| Comment Style | Syntax |
+|---------------|--------|
+| Single-line | `// text` |
+| Multi-line | `/* text */` |
+| JSDoc | `/** @param {string} name */` |
+
+</details>
+
+<details open>
+<summary><strong>🟣 Chapter 04 — Java Concepts (Variables & Functions)</strong></summary>
+<br>
+
+Deep-dive into `var` vs `let` vs `const` — scoping rules, redeclaration, reassignment, hoisting behaviour, and Temporal Dead Zone (TDZ).
+
+```mermaid
+flowchart TD
+    subgraph var["var"]
+        v1["function-scoped"] --> v2["✅ redeclarable"]
+        v2 --> v3["✅ reassignable"]
+        v3 --> v4["hoisted → undefined"]
+    end
+    subgraph let["let"]
+        l1["block-scoped"] --> l2["❌ redeclarable"]
+        l2 --> l3["✅ reassignable"]
+        l3 --> l4["hoisted → TDZ ❌"]
+    end
+    subgraph const["const"]
+        c1["block-scoped"] --> c2["❌ redeclarable"]
+        c2 --> c3["❌ reassignable"]
+        c3 --> c4["hoisted → TDZ ❌"]
+    end
+
+    style var fill:#a855f7,color:#fff
+    style let fill:#a855f7,color:#fff
+    style const fill:#a855f7,color:#fff
+```
+
+| Feature | `var` | `let` | `const` |
+|---------|-------|-------|---------|
+| Scope | Function | Block | Block |
+| Redeclare | ✅ | ❌ | ❌ |
+| Reassign | ✅ | ✅ | ❌ |
+| Hoisting | `undefined` | TDZ (ReferenceError) | TDZ (ReferenceError) |
+
+Functions: define once with `function name(){}` → invoke many times with `name()`.
+
+</details>
+
+<details open>
+<summary><strong>🟠 Chapter 05 — Literals</strong></summary>
+<br>
+
+Covers all literal value types in JavaScript — strings, numbers, booleans, null, undefined — and the modern template literal syntax.
+
+```mermaid
+flowchart LR
+    subgraph Literals["Literal Types"]
+        S["String"] --> SQ["'single'<br/>\"double\""]
+        S --> TL["`template ${var}`"]
+        N["Number"] --> NI["int · float"]
+        N --> NB["0b binary · 0o octal<br/>0x hex · 1e2 sci"]
+        N --> NG["BigInt 900n"]
+        B["Boolean"] --> BT["true / false"]
+        NU["null"] --> NUI["intentional empty"]
+        UD["undefined"] --> UDI["uninitialized"]
+    end
+    style Literals fill:#e67e22,color:#fff
+```
+
+| Type | Examples |
+|------|----------|
+| String | `'hello'`, `"world"` |
+| Template | `` `Hi ${name}` `` — interpolation + multi-line |
+| Number | `42`, `3.14`, `0xFF`, `0b1010`, `0o77`, `1_000_000`, `900n` |
+| Boolean | `true`, `false` |
+| Null | `let x = null` |
+| Undefined | `let x;` (no assignment) |
+
+💡 `null` is an *intentional* absence of value; `undefined` is JS's default *uninitialized* state.
+
+</details>
+
+<details open>
+<summary><strong>🟢 Chapter 06 — Operators</strong></summary>
+<br>
+
+All major JS operator categories — assignment, arithmetic, comparison, logical, ternary, type, increment/decrement, and nullish coalescing.
+
+```mermaid
+flowchart TD
+    O["JS Operators"] --> A["= Assignment"]
+    O --> B["+ - * / % **<br/>Arithmetic"]
+    O --> C["+= -= *= /= %=<br/>Compound"]
+    O --> D["&gt; &lt; &gt;= &lt;=<br/>Comparison"]
+    O --> E["==  ===  !=  !==<br/>Equality"]
+    O --> F["&amp;&amp;  &#124;&#124;  !<br/>Logical"]
+    O --> G["? :<br/>Ternary"]
+    O --> H["typeof<br/>Type"]
+    O --> I["++ --<br/>Inc/Dec"]
+    O --> J["??<br/>Nullish"]
+
+    style O fill:#2ecc71,color:#fff
+```
+
+| Category | Operators | Example |
+|----------|-----------|---------|
+| Assignment | `=` | `x = 10` |
+| Arithmetic | `+ - * / % **` | `10 % 3 → 1`, `2 ** 3 → 8` |
+| Compound | `+= -= *= /= %=` | `x += 5` → `x = x + 5` |
+| Comparison | `> < >= <=` | `5 > 3 → true` |
+| Equality (loose) | `==` | `5 == '5' → true` (coerces) |
+| Equality (strict) | `===` | `5 === '5' → false` (type+value) |
+| Logical | `&& \|\| !` | `true && false → false` |
+| Ternary | `? :` | `age >= 18 ? 'adult' : 'minor'` |
+| Type | `typeof` | `typeof 42 → 'number'` |
+| Inc/Dec | `++ --` | `i++` |
+| Nullish | `??` | `x ?? 'default'` (if x is null/undefined) |
+
+⚡ **Rule of thumb**: always prefer `===` over `==` unless you intentionally want type coercion.
+
+</details>
 
 ---
 
