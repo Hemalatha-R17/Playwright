@@ -23,7 +23,9 @@ flowchart LR
     C --> D[Chapter 04<br/>Java Concepts]
     D --> E[Chapter 05<br/>Literals]
     E --> F[Chapter 06<br/>Operators]
-    F --> G[VS Code Shortcuts]
+    F --> G[chapter_07<br/>If-Else]
+    G --> H[chapter_08<br/>Switch Statement]
+    H --> I[chapter_09<br/>User Input]
 
     A --> A1["✅ 01_Basics.js"]
     A --> A2["✅ 02_JS_Verify_Setup.js"]
@@ -51,6 +53,18 @@ flowchart LR
     F --> F5["✅ Increment / Decrement"]
     F --> F6["✅ Nullish Coalescing"]
 
+    G --> G1["✅ If / Else If / Else"]
+    G --> G2["✅ Real-world examples"]
+    G --> G3["✅ Grade Calc / Leap Year"]
+
+    H --> H1["✅ Switch / Case"]
+    H --> H2["✅ Break / Default"]
+    H --> H3["✅ Group / IQ patterns"]
+
+    I --> I1["✅ User Input"]
+    I --> I2["✅ Node readline"]
+    I --> I3["✅ prompt-sync"]
+
     style A fill:#4a90d9,color:#fff
     style B fill:#50b86c,color:#fff
     style C fill:#e6a23c,color:#fff
@@ -58,6 +72,8 @@ flowchart LR
     style E fill:#e67e22,color:#fff
     style F fill:#2ecc71,color:#fff
     style G fill:#e74c3c,color:#fff
+    style H fill:#f39c12,color:#fff
+    style I fill:#3498db,color:#fff
 ```
 
 ---
@@ -71,7 +87,10 @@ flowchart LR
 | 03  | **JS Identifier & Literals** | `06_Identifier_Rules.js` · `07_Identifier_Case_Rules.js` · `08_Comments.js` · `js_identifier_rules.js` · `VS_Code_shortcuts_mac.md` · `VS_Code_shortcuts_windows.md` |
 | 04  | **Java Concepts**            | `09_var_let_const.js` · `10_functions.js` · `11_var_explained.js` · `12_let_people_love.js` · `13_const_explained.js` · `14_var_functionscope.js` · `15_let_scope.js` · `16_Hoisting.js` · `17_hoisting_fn.js` |
 | 05  | **Literals**                 | `22_Literal.js` · `23_null_undefined.js` · `24_null.js` · `25_Literal_All.js` · `26_Literal_Number_all.js` · `27_String.js` · `28_Template_Literal.js` · `29_Backtick_single_double.js` |
-| 06  | **Operators**                | `30_Operator.js` · `31_Arithmetic_OP.js` · `32_Module_OP.js` · `33_Expo_OP.js` · `34_IQ_Compound_OP.js` · `35_Comparision_OP.js` · `36_Comparision_Strict_loose.js` · `37_IQ_Loose_Strict.js` · `38_Confusing_Comparision.js` · `39_Logical_OP.js` · `40_String_Con_OP.js` · `41_Ternary_OP.js` · `42_Type_OP.js` · `43_Incre_Decre_OP.js` · `44_Null_OP.js` |
+| 06  | **Operators**                | `30_Operator.js` · `31_Arithmetic_OP.js` · `32_Modulus_OP.js` · `33_Expo_OP.js` · `34_IQ.js` · `35_Comparsion_OP.js` · `36_Comparsion_Strict_loose.js` · `37_IQ_Loose_Strict.js` · `38_Confusing_Comparsion.js` · `39_Logical_Op.js` · `40_String_Con_Op.js` · `41_Ternary_Op.js` · `42_Type_Op.js` · `43_Incre_Decre_Op.js` · `44_Null_Op.js` · `45_Post_Increment.js` · `46_IQ_INCREMENT_D.js` · `47_Advance_ID_.js` |
+| 07  | **If-Else**                  | `48_IF_ESLE.js` · `49_If_elseif_else.js` · `50_REAL_IF_ELSE.js` · `51_API_IF_ELSE.js` · `52_IQ_IF_ELSE.js` · `53_IF_ELSE_real.js` · `54_IQ.js` · `55_IE.js` · `56_IQ_EVEN_ODD.js` · `57_Grade_Calc.js` · `58_LEAP_YEAR.js` |
+| 08  | **Switch Statement**         | `59_Switch.js` · `60_No_Break.js` · `61_Default.js` · `62_REAL_TIME_EXAMPLE.js` · `63_Switch_Group.js` · `64_IQ.js` · `65_IQ2.js` · `66_IQ3.js` · `67_IQ4.js` |
+| 09  | **User Input**               | `68_User_Input.js` · `69_Node_readline.js` · `70_prompt_sync.js` |
 
 ---
 
@@ -118,22 +137,55 @@ Playwright/
 │   ├── 27_String.js
 │   ├── 28_Template_Literal.js
 │   └── 29_Backtick_single_double.js
-└── Chapter_06_Operator/
-    ├── 30_Operator.js
-    ├── 31_Arithmetic_OP.js
-    ├── 32_Module_OP.js
-    ├── 33_Expo_OP.js
-    ├── 34_IQ_Compound_OP.js
-    ├── 35_Comparision_OP.js
-    ├── 36_Comparision_Strict_loose.js
-    ├── 37_IQ_Loose_Strict.js
-    ├── 38_Confusing_Comparision.js
-    ├── 39_Logical_OP.js
-    ├── 40_String_Con_OP.js
-    ├── 41_Ternary_OP.js
-    ├── 42_Type_OP.js
-    ├── 43_Incre_Decre_OP.js
-    └── 44_Null_OP.js
+├── chapter_06_Operator/
+│   ├── 30_Operator.js
+│   ├── 31_Arithmetic_OP.js
+│   ├── 32_Modulus_OP.js
+│   ├── 33_Expo_OP.js
+│   ├── 34_IQ.js
+│   ├── 35_Comparsion_OP.js
+│   ├── 36_Comparsion_Strict_loose.js
+│   ├── 37_IQ_Loose_Strict.js
+│   ├── 38_Confusing_Comparsion.js
+│   ├── 39_Logical_Op.js
+│   ├── 40_String_Con_Op.js
+│   ├── 41_Ternary_Op.js
+│   ├── 42_Type_Op.js
+│   ├── 43_Incre_Decre_Op.js
+│   ├── 44_Null_Op.js
+│   ├── 45_Post_Increment.js
+│   ├── 46_IQ_INCREMENT_D.js
+│   ├── 47_Advance_ID_.js
+│   └── README.md
+├── chapter_07_If_else/
+│   ├── 48_IF_ESLE.js
+│   ├── 49_If_elseif_else.js
+│   ├── 50_REAL_IF_ELSE.js
+│   ├── 51_API_IF_ELSE.js
+│   ├── 52_IQ_IF_ELSE.js
+│   ├── 53_IF_ELSE_real.js
+│   ├── 54_IQ.js
+│   ├── 55_IE.js
+│   ├── 56_IQ_EVEN_ODD.js
+│   ├── 57_Grade_Calc.js
+│   ├── 58_LEAP_YEAR.js
+│   └── README.md
+├── chapter_08_Switch_Statement/
+│   ├── 59_Switch.js
+│   ├── 60_No_Break.js
+│   ├── 61_Default.js
+│   ├── 62_REAL_TIME_EXAMPLE.js
+│   ├── 63_Switch_Group.js
+│   ├── 64_IQ.js
+│   ├── 65_IQ2.js
+│   ├── 66_IQ3.js
+│   ├── 67_IQ4.js
+│   └── README.md
+└── chapter_09_UserInput/
+    ├── 68_User_Input.js
+    ├── 69_Node_readline.js
+    ├── 70_prompt_sync.js
+    └── README.md
 ```
 
 ---
@@ -345,6 +397,85 @@ flowchart TD
 | Nullish | `??` | `x ?? 'default'` (if x is null/undefined) |
 
 ⚡ **Rule of thumb**: always prefer `===` over `==` unless you intentionally want type coercion.
+
+</details>
+
+<details open>
+<summary><strong>🔴 Chapter 07 — If-Else</strong></summary>
+<br>
+
+Covers conditional execution with `if`, `else if`, `else` — including real-world examples, nested conditions, and common interview questions.
+
+```mermaid
+flowchart TD
+    Start["Condition"] --> Q{"if (condition) ?"}
+    Q -->|true| True["✅ if block"]
+    Q -->|false| Else{"else if ?"}
+    Else -->|true| ElseIf["✅ else if block"]
+    Else -->|false| Else2["✅ else block"]
+
+    style Start fill:#e74c3c,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `48_IF_ESLE.js` | Basic if-else syntax |
+| `49_If_elseif_else.js` | Chained conditions |
+| `50_REAL_IF_ELSE.js` | Real-world example |
+| `51_API_IF_ELSE.js` | API-style branching |
+| `56_IQ_EVEN_ODD.js` | Even-odd check |
+| `57_Grade_Calc.js` | Grade calculator |
+| `58_LEAP_YEAR.js` | Leap year detection |
+
+</details>
+
+<details open>
+<summary><strong>🟡 Chapter 08 — Switch Statement</strong></summary>
+<br>
+
+Covers `switch` / `case` for multi-way branching — including fall-through behavior, `break`, `default`, grouped cases, and interview patterns.
+
+```mermaid
+flowchart TD
+    Exp["Expression"] --> Case1{"case A"}
+    Case1 -->|match| B1["✅ execute + break"]
+    Case1 -->|no| Case2{"case B"}
+    Case2 -->|match| B2["✅ execute + break"]
+    Case2 -->|no| Def["✅ default block"]
+
+    style Exp fill:#f39c12,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `59_Switch.js` | Basic switch syntax |
+| `60_No_Break.js` | Fall-through (no break) |
+| `61_Default.js` | Default case |
+| `62_REAL_TIME_EXAMPLE.js` | Real-world usage |
+| `63_Switch_Group.js` | Grouped cases |
+| `64_IQ.js` — `67_IQ4.js` | Interview patterns |
+
+</details>
+
+<details open>
+<summary><strong>🔵 Chapter 09 — User Input</strong></summary>
+<br>
+
+Covers reading user input in Node.js — from low-level `readline` to the convenient `prompt-sync` package.
+
+```mermaid
+flowchart LR
+    U[User Input] --> RL["readline (built-in)"]
+    U --> PS["prompt-sync (npm)"]
+
+    style U fill:#3498db,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `68_User_Input.js` | Basic input handling |
+| `69_Node_readline.js` | Node.js `readline` module |
+| `70_prompt_sync.js` | Using `prompt-sync` package |
 
 </details>
 
