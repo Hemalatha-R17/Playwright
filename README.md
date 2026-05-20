@@ -90,7 +90,8 @@ flowchart LR
 | 06  | **Operators**                | `30_Operator.js` · `31_Arithmetic_OP.js` · `32_Modulus_OP.js` · `33_Expo_OP.js` · `34_IQ.js` · `35_Comparsion_OP.js` · `36_Comparsion_Strict_loose.js` · `37_IQ_Loose_Strict.js` · `38_Confusing_Comparsion.js` · `39_Logical_Op.js` · `40_String_Con_Op.js` · `41_Ternary_Op.js` · `42_Type_Op.js` · `43_Incre_Decre_Op.js` · `44_Null_Op.js` · `45_Post_Increment.js` · `46_IQ_INCREMENT_D.js` · `47_Advance_ID_.js` |
 | 07  | **If-Else**                  | `48_IF_ESLE.js` · `49_If_elseif_else.js` · `50_REAL_IF_ELSE.js` · `51_API_IF_ELSE.js` · `52_IQ_IF_ELSE.js` · `53_IF_ELSE_real.js` · `54_IQ.js` · `55_IE.js` · `56_IQ_EVEN_ODD.js` · `57_Grade_Calc.js` · `58_LEAP_YEAR.js` |
 | 08  | **Switch Statement**         | `59_Switch.js` · `60_No_Break.js` · `61_Default.js` · `62_REAL_TIME_EXAMPLE.js` · `63_Switch_Group.js` · `64_IQ.js` · `65_IQ2.js` · `66_IQ3.js` · `67_IQ4.js` |
-| 09  | **User Input**               | `68_User_Input.js` · `69_Node_readline.js` · `70_prompt_sync.js` · `Assignment_1.js` · `Assignment_2.js` · `Assignment_3.js` · `Assignment_4.js` · `Assignment_5.js` |
+| 09  | **User Input**               | `68_User_Input.js` · `69_Node_readline.js` · `70_prompt_sync.js` |
+| 10  | **Assignments**              | `Assignment_1.js` · `Assignment_2.js` · `Assignment_3.js` · `Assignment_4.js` · `Assignment_5.js` |
 
 ---
 
@@ -181,16 +182,17 @@ Playwright/
 │   ├── 66_IQ3.js
 │   ├── 67_IQ4.js
 │   └── README.md
-└── chapter_09_UserInput/
-    ├── 68_User_Input.js
-    ├── 69_Node_readline.js
-    ├── 70_prompt_sync.js
+├── chapter_09_UserInput/
+│   ├── 68_User_Input.js
+│   ├── 69_Node_readline.js
+│   ├── 70_prompt_sync.js
+│   └── README.md
+└── Assignment/
     ├── Assignment_1.js
     ├── Assignment_2.js
     ├── Assignment_3.js
     ├── Assignment_4.js
-    ├── Assignment_5.js
-    └── README.md
+    └── Assignment_5.js
 ```
 
 ---
@@ -481,6 +483,17 @@ flowchart LR
 | `68_User_Input.js` | Basic input handling |
 | `69_Node_readline.js` | Node.js `readline` module |
 | `70_prompt_sync.js` | Using `prompt-sync` package |
+
+</details>
+
+<details open>
+<summary><strong>⚪ Assignments</summary>
+<br>
+
+Hands-on exercises covering HTTP status categorization, test pass/fail verdicts, bug severity classification, build health reporting, and login lockout logic.
+
+| File | Concept |
+|------|---------|
 | `Assignment_1.js` | HTTP Status Code Categorizer |
 | `Assignment_2.js` | Test Case Pass/Fail Verdict |
 | `Assignment_3.js` | Bug Severity Classifier |
