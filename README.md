@@ -61,9 +61,51 @@ flowchart LR
     H --> H2["✅ Break / Default"]
     H --> H3["✅ Group / IQ patterns"]
 
+    I --> J[chapter_10<br/>Loops]
+
+    A --> A1["✅ 01_Basics.js"]
+    A --> A2["✅ 02_JS_Verify_Setup.js"]
+    A --> A3["✅ 03_JS.js"]
+    A --> A4["✅ 04_HotCode.js"]
+
+    B --> B1["✅ 05_JS_Basics.js"]
+
+    C --> C1["✅ Identifier Rules"]
+    C --> C2["✅ Case Rules"]
+    C --> C3["✅ Comments"]
+    C --> C4["✅ Identifier Rules (extra)"]
+
+    D --> D1["✅ var / let / const"]
+    D --> D2["✅ Functions"]
+    D --> D3["✅ Hoisting"]
+
+    E --> E1["✅ Literals"]
+    E --> E2["✅ Template Literals"]
+
+    F --> F1["✅ Operator Intro"]
+    F --> F2["✅ Arithmetic / Mod / Expo"]
+    F --> F3["✅ Comparison / Strict"]
+    F --> F4["✅ Logical / Ternary"]
+    F --> F5["✅ Increment / Decrement"]
+    F --> F6["✅ Nullish Coalescing"]
+
+    G --> G1["✅ If / Else If / Else"]
+    G --> G2["✅ Real-world examples"]
+    G --> G3["✅ Grade Calc / Leap Year"]
+
+    H --> H1["✅ Switch / Case"]
+    H --> H2["✅ Break / Default"]
+    H --> H3["✅ Group / IQ patterns"]
+
     I --> I1["✅ User Input"]
     I --> I2["✅ Node readline"]
     I --> I3["✅ prompt-sync"]
+
+    J --> J1["✅ for loop"]
+    J --> J2["✅ while loop"]
+    J --> J3["✅ do-while loop"]
+    J --> J4["✅ continue"]
+    J --> J5["✅ IQ traps"]
 
     style A fill:#4a90d9,color:#fff
     style B fill:#50b86c,color:#fff
@@ -74,6 +116,7 @@ flowchart LR
     style G fill:#e74c3c,color:#fff
     style H fill:#f39c12,color:#fff
     style I fill:#3498db,color:#fff
+    style J fill:#1abc9c,color:#fff
 ```
 
 ---
@@ -91,7 +134,8 @@ flowchart LR
 | 07  | **If-Else**                  | `48_IF_ESLE.js` · `49_If_elseif_else.js` · `50_REAL_IF_ELSE.js` · `51_API_IF_ELSE.js` · `52_IQ_IF_ELSE.js` · `53_IF_ELSE_real.js` · `54_IQ.js` · `55_IE.js` · `56_IQ_EVEN_ODD.js` · `57_Grade_Calc.js` · `58_LEAP_YEAR.js` |
 | 08  | **Switch Statement**         | `59_Switch.js` · `60_No_Break.js` · `61_Default.js` · `62_REAL_TIME_EXAMPLE.js` · `63_Switch_Group.js` · `64_IQ.js` · `65_IQ2.js` · `66_IQ3.js` · `67_IQ4.js` |
 | 09  | **User Input**               | `68_User_Input.js` · `69_Node_readline.js` · `70_prompt_sync.js` |
-| 10  | **Assignments**              | `Assignment_1.js` · `Assignment_2.js` · `Assignment_3.js` · `Assignment_4.js` · `Assignment_5.js` |
+| 10  | **Loops**                    | `71_For_loop.js` · `72_For_loop.js` · `73_For_Loop2.js` · `74_IQ.js` · `75_For_OF_IN_EACH.js` · `76_While.js` · `77_Do_While.js` · `78_Do_While.js` · `79_IQ.js` · `80_IQ.js` · `81_IQ.js` · `82_IQ.js` |
+| 11  | **Assignments**              | `Assignment_1.js` · `Assignment_2.js` · `Assignment_3.js` · `Assignment_4.js` · `Assignment_5.js` |
 
 ---
 
@@ -186,6 +230,20 @@ Playwright/
 │   ├── 68_User_Input.js
 │   ├── 69_Node_readline.js
 │   ├── 70_prompt_sync.js
+│   └── README.md
+├── chapter_10_Loops/
+│   ├── 71_For_loop.js
+│   ├── 72_For_loop.js
+│   ├── 73_For_Loop2.js
+│   ├── 74_IQ.js
+│   ├── 75_For_OF_IN_EACH.js
+│   ├── 76_While.js
+│   ├── 77_Do_While.js
+│   ├── 78_Do_While.js
+│   ├── 79_IQ.js
+│   ├── 80_IQ.js
+│   ├── 81_IQ.js
+│   ├── 82_IQ.js
 │   └── README.md
 └── Assignment/
     ├── Assignment_1.js
@@ -483,6 +541,39 @@ flowchart LR
 | `68_User_Input.js` | Basic input handling |
 | `69_Node_readline.js` | Node.js `readline` module |
 | `70_prompt_sync.js` | Using `prompt-sync` package |
+
+</details>
+
+<details open>
+<summary><strong>🟢 Chapter 10 — Loops</strong></summary>
+<br>
+
+Covers all major loop types in JS — `for`, `while`, `do-while`, `continue`, and common interview traps.
+
+```mermaid
+flowchart TD
+    L["Loops"] --> F["for — known iterations"]
+    L --> W["while — maybe 0 iterations"]
+    L --> DW["do-while — at least 1 iteration"]
+    L --> C["continue — skip iteration"]
+
+    style L fill:#1abc9c,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `71_For_loop.js` | Why loops exist — replacing manual repetition |
+| `72_For_loop.js` | For loop with `<=` — 6 iterations (0 through 5) |
+| `73_For_Loop2.js` | Loop boundaries: `<` vs `<=` |
+| `74_IQ.js` | Conditional logic inside loop |
+| `75_For_OF_IN_EACH.js` | While loop — retry logic |
+| `76_While.js` | While — init, condition, update |
+| `77_Do_While.js` | do-while — guaranteed one execution |
+| `78_Do_While.js` | do-while retry pattern |
+| `79_IQ.js` | While countdown (`i--`) |
+| `80_IQ.js` | do-while off-by-one trap |
+| `81_IQ.js` | `continue` — skip current iteration |
+| `82_IQ.js` | do-while infinite-loop risk |
 
 </details>
 
