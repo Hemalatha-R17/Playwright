@@ -135,7 +135,7 @@ flowchart LR
 | 08  | **Switch Statement**         | `59_Switch.js` · `60_No_Break.js` · `61_Default.js` · `62_REAL_TIME_EXAMPLE.js` · `63_Switch_Group.js` · `64_IQ.js` · `65_IQ2.js` · `66_IQ3.js` · `67_IQ4.js` |
 | 09  | **User Input**               | `68_User_Input.js` · `69_Node_readline.js` · `70_prompt_sync.js` |
 | 10  | **Loops**                    | `71_For_loop.js` · `72_For_loop.js` · `73_For_Loop2.js` · `74_IQ.js` · `75_For_OF_IN_EACH.js` · `76_While.js` · `77_Do_While.js` · `78_Do_While.js` · `79_IQ.js` · `80_IQ.js` · `81_IQ.js` · `82_IQ.js` |
-| 11  | **Assignments**              | `Assignment_1.js` · `Assignment_2.js` · `Assignment_3.js` · `Assignment_4.js` · `Assignment_5.js` |
+| 11  | **Assignments**              | `Assignment_1.js` · `Assignment_2.js` · `Assignment_3.js` · `Assignment_4.js` · `Assignment_5.js` · `Assignment_6.js` · `Assignment_7.js` |
 
 ---
 
@@ -245,12 +245,14 @@ Playwright/
 │   ├── 81_IQ.js
 │   ├── 82_IQ.js
 │   └── README.md
-└── Assignment/
-    ├── Assignment_1.js
-    ├── Assignment_2.js
-    ├── Assignment_3.js
-    ├── Assignment_4.js
-    └── Assignment_5.js
+    └── Assignment/
+        ├── Assignment_1.js
+        ├── Assignment_2.js
+        ├── Assignment_3.js
+        ├── Assignment_4.js
+        ├── Assignment_5.js
+        ├── Assignment_6.js
+        └── Assignment_7.js
 ```
 
 ---
@@ -590,6 +592,8 @@ Hands-on exercises covering HTTP status categorization, test pass/fail verdicts,
 | `Assignment_3.js` | Bug Severity Classifier |
 | `Assignment_4.js` | Build Health Reporter |
 | `Assignment_5.js` | Login Lockout After Failed Attempts |
+| `Assignment_6.js` | Triangle Classifier |
+| `Assignment_7.js` | FizzBuzz Test |
 
 </details>
 
