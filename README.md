@@ -62,50 +62,23 @@ flowchart LR
     H --> H3["✅ Group / IQ patterns"]
 
     I --> J[chapter_10<br/>Loops]
-
-    A --> A1["✅ 01_Basics.js"]
-    A --> A2["✅ 02_JS_Verify_Setup.js"]
-    A --> A3["✅ 03_JS.js"]
-    A --> A4["✅ 04_HotCode.js"]
-
-    B --> B1["✅ 05_JS_Basics.js"]
-
-    C --> C1["✅ Identifier Rules"]
-    C --> C2["✅ Case Rules"]
-    C --> C3["✅ Comments"]
-    C --> C4["✅ Identifier Rules (extra)"]
-
-    D --> D1["✅ var / let / const"]
-    D --> D2["✅ Functions"]
-    D --> D3["✅ Hoisting"]
-
-    E --> E1["✅ Literals"]
-    E --> E2["✅ Template Literals"]
-
-    F --> F1["✅ Operator Intro"]
-    F --> F2["✅ Arithmetic / Mod / Expo"]
-    F --> F3["✅ Comparison / Strict"]
-    F --> F4["✅ Logical / Ternary"]
-    F --> F5["✅ Increment / Decrement"]
-    F --> F6["✅ Nullish Coalescing"]
-
-    G --> G1["✅ If / Else If / Else"]
-    G --> G2["✅ Real-world examples"]
-    G --> G3["✅ Grade Calc / Leap Year"]
-
-    H --> H1["✅ Switch / Case"]
-    H --> H2["✅ Break / Default"]
-    H --> H3["✅ Group / IQ patterns"]
-
-    I --> I1["✅ User Input"]
-    I --> I2["✅ Node readline"]
-    I --> I3["✅ prompt-sync"]
+    J --> K[chapter_11<br/>Arrays]
 
     J --> J1["✅ for loop"]
     J --> J2["✅ while loop"]
     J --> J3["✅ do-while loop"]
     J --> J4["✅ continue"]
     J --> J5["✅ IQ traps"]
+
+    K --> K1["✅ Arrays Intro"]
+    K --> K2["✅ Another Array"]
+    K --> K3["✅ Access"]
+    K --> K4["✅ Adding / Remove"]
+    K --> K5["✅ More Adding/Remove"]
+    K --> K6["✅ Real Example"]
+    K --> K7["✅ Searching"]
+    K --> K8["✅ Iterate"]
+    K --> K9["✅ Transform"]
 
     style A fill:#4a90d9,color:#fff
     style B fill:#50b86c,color:#fff
@@ -117,6 +90,7 @@ flowchart LR
     style H fill:#f39c12,color:#fff
     style I fill:#3498db,color:#fff
     style J fill:#1abc9c,color:#fff
+    style K fill:#e91e63,color:#fff
 ```
 
 ---
@@ -135,7 +109,8 @@ flowchart LR
 | 08  | **Switch Statement**         | `59_Switch.js` · `60_No_Break.js` · `61_Default.js` · `62_REAL_TIME_EXAMPLE.js` · `63_Switch_Group.js` · `64_IQ.js` · `65_IQ2.js` · `66_IQ3.js` · `67_IQ4.js` |
 | 09  | **User Input**               | `68_User_Input.js` · `69_Node_readline.js` · `70_prompt_sync.js` |
 | 10  | **Loops**                    | `71_For_loop.js` · `72_For_loop.js` · `73_For_Loop2.js` · `74_IQ.js` · `75_For_OF_IN_EACH.js` · `76_While.js` · `77_Do_While.js` · `78_Do_While.js` · `79_IQ.js` · `80_IQ.js` · `81_IQ.js` · `82_IQ.js` |
-| 11  | **Assignments**              | `Assignment_1.js` · `Assignment_2.js` · `Assignment_3.js` · `Assignment_4.js` · `Assignment_5.js` · `Assignment_6.js` · `Assignment_7.js` |
+| 11  | **Arrays**                   | `83_Arrays.js` · `84_Arrays.js` · `85_Access_Array.js` · `86_Arrays_Adding_Remove.js` · `87_Adding_Remove2.js` · `88_REAL_Example.js` · `89_Searching.js` · `90_Iterate.js` · `91_Transform_Array.js` |
+| 12  | **Assignments**              | `Assignment_1.js` · `Assignment_2.js` · `Assignment_3.js` · `Assignment_4.js` · `Assignment_5.js` · `Assignment_6.js` · `Assignment_7.js` |
 
 ---
 
@@ -245,7 +220,17 @@ Playwright/
 │   ├── 81_IQ.js
 │   ├── 82_IQ.js
 │   └── README.md
-    └── Assignment/
+├── chapter_11_Arrays/
+│   ├── 83_Arrays.js
+│   ├── 84_Arrays.js
+│   ├── 85_Access_Array.js
+│   ├── 86_Arrays_Adding_Remove.js
+│   ├── 87_Adding_Remove2.js
+│   ├── 88_REAL_Example.js
+│   ├── 89_Searching.js
+│   ├── 90_Iterate.js
+│   └── 91_Transform_Array.js
+├── Assignment/
         ├── Assignment_1.js
         ├── Assignment_2.js
         ├── Assignment_3.js
@@ -576,6 +561,38 @@ flowchart TD
 | `80_IQ.js` | do-while off-by-one trap |
 | `81_IQ.js` | `continue` — skip current iteration |
 | `82_IQ.js` | do-while infinite-loop risk |
+
+</details>
+
+<details open>
+<summary><strong>🔴 Chapter 11 — Arrays</strong></summary>
+<br>
+
+Covers array creation, access, modification, searching, iteration, and transformation in JavaScript.
+
+```mermaid
+flowchart LR
+    ARR["Arrays"] --> C["Create"]
+    ARR --> A["Access"]
+    ARR --> M["Modify"]
+    ARR --> S["Search"]
+    ARR --> I["Iterate"]
+    ARR --> T["Transform"]
+
+    style ARR fill:#e91e63,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `83_Arrays.js` | Array creation and basic operations |
+| `84_Arrays.js` | More array examples |
+| `85_Access_Array.js` | Accessing array elements |
+| `86_Arrays_Adding_Remove.js` | Adding and removing elements |
+| `87_Adding_Remove2.js` | More add/remove techniques |
+| `88_REAL_Example.js` | Real-world array example |
+| `89_Searching.js` | Searching within arrays |
+| `90_Iterate.js` | Iterating over arrays |
+| `91_Transform_Array.js` | Transforming arrays (map, filter, etc.) |
 
 </details>
 
