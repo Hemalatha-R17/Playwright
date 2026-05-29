@@ -79,6 +79,19 @@ flowchart LR
     K --> K7["✅ Searching"]
     K --> K8["✅ Iterate"]
     K --> K9["✅ Transform"]
+    K --> K10["✅ More Arrays"]
+    K --> K11["✅ Array Slicing"]
+    K --> K12["✅ Concat"]
+    K --> K13["✅ Array Checking"]
+
+    K --> L[chapter_12<br/>Functions]
+    L --> L1["✅ Basic Functions"]
+    L --> L2["✅ Fn With Param No Return"]
+    L --> L3["✅ Fn Without Param With Return"]
+    L --> L4["✅ Fn With Param With Return"]
+    L --> L5["✅ Template Literal"]
+    L --> L6["✅ Fn Expression"]
+    L --> L7["✅ Arrow Fn"]
 
     style A fill:#4a90d9,color:#fff
     style B fill:#50b86c,color:#fff
@@ -91,6 +104,7 @@ flowchart LR
     style I fill:#3498db,color:#fff
     style J fill:#1abc9c,color:#fff
     style K fill:#e91e63,color:#fff
+    style L fill:#a855f7,color:#fff
 ```
 
 ---
@@ -109,8 +123,9 @@ flowchart LR
 | 08  | **Switch Statement**         | `59_Switch.js` · `60_No_Break.js` · `61_Default.js` · `62_REAL_TIME_EXAMPLE.js` · `63_Switch_Group.js` · `64_IQ.js` · `65_IQ2.js` · `66_IQ3.js` · `67_IQ4.js` |
 | 09  | **User Input**               | `68_User_Input.js` · `69_Node_readline.js` · `70_prompt_sync.js` |
 | 10  | **Loops**                    | `71_For_loop.js` · `72_For_loop.js` · `73_For_Loop2.js` · `74_IQ.js` · `75_For_OF_IN_EACH.js` · `76_While.js` · `77_Do_While.js` · `78_Do_While.js` · `79_IQ.js` · `80_IQ.js` · `81_IQ.js` · `82_IQ.js` |
-| 11  | **Arrays**                   | `83_Arrays.js` · `84_Arrays.js` · `85_Access_Array.js` · `86_Arrays_Adding_Remove.js` · `87_Adding_Remove2.js` · `88_REAL_Example.js` · `89_Searching.js` · `90_Iterate.js` · `91_Transform_Array.js` |
-| 12  | **Assignments**              | `Assignment_1.js` · `Assignment_2.js` · `Assignment_3.js` · `Assignment_4.js` · `Assignment_5.js` · `Assignment_6.js` · `Assignment_7.js` |
+| 11  | **Arrays**                   | `83_Arrays.js` · `84_Arrays.js` · `85_Access_Array.js` · `86_Arrays_Adding_Remove.js` · `87_Adding_Remove2.js` · `88_REAL_Example.js` · `89_Searching.js` · `90_Iterate.js` · `91_Transform_Array.js` · `92_Arrays.js` · `93_Array_Slicing.js` · `94_Concat_array.js` · `95_Array_Checking.js` |
+| 12  | **Functions**                | `96_Functions.js` · `97_Type1_Fn_Basic_Functions.js` · `98_Type2_Fn_With_Param_No_Return.js` · `99_Type3_Fn_without_Param_Return_Type.js` · `100_Type4_Fn_With_Param_With_Return.js` · `101_Template_literal.js` · `102_Fn_Expression.js` · `103_Arrow_Fn.js` |
+| 13  | **Assignments**              | `Assignment_1.js` · `Assignment_2.js` · `Assignment_3.js` · `Assignment_4.js` · `Assignment_5.js` · `Assignment_6.js` · `Assignment_7.js` |
 
 ---
 
@@ -220,7 +235,7 @@ Playwright/
 │   ├── 81_IQ.js
 │   ├── 82_IQ.js
 │   └── README.md
-├── chapter_11_Arrays/
+├── Chapter_11_Arrays/
 │   ├── 83_Arrays.js
 │   ├── 84_Arrays.js
 │   ├── 85_Access_Array.js
@@ -229,7 +244,20 @@ Playwright/
 │   ├── 88_REAL_Example.js
 │   ├── 89_Searching.js
 │   ├── 90_Iterate.js
-│   └── 91_Transform_Array.js
+│   ├── 91_Transform_Array.js
+│   ├── 92_Arrays.js
+│   ├── 93_Array_Slicing.js
+│   ├── 94_Concat_array.js
+│   └── 95_Array_Checking.js
+├── Chapter_12_Funtions/
+│   ├── 96_Functions.js
+│   ├── 97_Type1_Fn_Basic_Functions.js
+│   ├── 98_Type2_Fn_With_Param_No_Return.js
+│   ├── 99_Type3_Fn_without_Param_Return_Type.js
+│   ├── 100_Type4_Fn_With_Param_With_Return.js
+│   ├── 101_Template_literal.js
+│   ├── 102_Fn_Expression.js
+│   └── 103_Arrow_Fn.js
 ├── Assignment/
         ├── Assignment_1.js
         ├── Assignment_2.js
@@ -593,11 +621,46 @@ flowchart LR
 | `89_Searching.js` | Searching within arrays |
 | `90_Iterate.js` | Iterating over arrays |
 | `91_Transform_Array.js` | Transforming arrays (map, filter, etc.) |
+| `92_Arrays.js` | More array creation and manipulation |
+| `93_Array_Slicing.js` | Slicing arrays with slice() |
+| `94_Concat_array.js` | Concatenating arrays with concat() |
+| `95_Array_Checking.js` | Checking array contents and conditions |
 
 </details>
 
 <details open>
-<summary><strong>⚪ Assignments</summary>
+<summary><strong>🟣 Chapter 12 — Functions</strong></summary>
+<br>
+
+Covers function declaration, parameters, return values, function expressions, arrow functions, and template literals.
+
+```mermaid
+flowchart LR
+    FN["Functions"] --> B["Basic Declaration"]
+    FN --> P["With Params"]
+    FN --> R["With Return"]
+    FN --> PR["With Param & Return"]
+    FN --> E["Fn Expression"]
+    FN --> A["Arrow Fn"]
+
+    style FN fill:#a855f7,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `96_Functions.js` | Function basics — declaration and invocation |
+| `97_Type1_Fn_Basic_Functions.js` | Type 1: Basic function (no param, no return) |
+| `98_Type2_Fn_With_Param_No_Return.js` | Type 2: Function with parameters, no return |
+| `99_Type3_Fn_without_Param_Return_Type.js` | Type 3: Function without params, with return |
+| `100_Type4_Fn_With_Param_With_Return.js` | Type 4: Function with params and return |
+| `101_Template_literal.js` | Using template literals in functions |
+| `102_Fn_Expression.js` | Function expressions |
+| `103_Arrow_Fn.js` | Arrow function syntax |
+
+</details>
+
+<details open>
+<summary><strong>⚪ Chapter 13 — Assignments</summary>
 <br>
 
 Hands-on exercises covering HTTP status categorization, test pass/fail verdicts, bug severity classification, build health reporting, and login lockout logic.
