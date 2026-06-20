@@ -292,7 +292,8 @@ Playwright/
         ├── Assignment_5.js
         ├── Assignment_6.js
         ├── Assignment_7.js
-        └── Assignment_8.js
+        ├── Assignment_8.js
+        └── Assignment_9.js
 ```
 
 ---
@@ -915,6 +916,7 @@ Hands-on exercises covering HTTP status categorization, test pass/fail verdicts,
 | `Assignment_6.js` | Triangle Classifier |
 | `Assignment_7.js` | FizzBuzz Test |
 | `Assignment_8.js` | String Reverse & Palindrome Check |
+| `Assignment_9.js` | Anagram Checker |
 
 </details>
 
