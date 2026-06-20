@@ -2,17 +2,17 @@
 // A function that takes a function as argument or returns a function.
 
 function runWithLoggin(testFn, testName) {
-    let result = testFn();
-    return result;
+  let result = testFn();
+  return result;
 }
 
 function loginTest() {
-    return "pass";
+  return "pass";
 }
 
 function loginTestFAILED() {
-    return "fail";
+  return "fail";
 }
 
-runWithLoggin(loginTest, "Login Test");
-runWithLoggin(loginTestFAILED, "Dashboard Failed Test");
+console.log(runWithLoggin(loginTest, "Login Test")); //pass
+console.log(runWithLoggin(loginTestFAILED, "Dashboard Failed Test")); //fail
