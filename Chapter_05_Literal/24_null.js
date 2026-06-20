@@ -1,7 +1,8 @@
-let no_audi = null;
-let two_heart;
+let no_audi_pramod_sir_has = null;
+let pramod_has_two_wives;
 
 let age = 0;
-let ausi = "";
+
+let audi = "";
 console.log(typeof audi);
 console.log(typeof age);

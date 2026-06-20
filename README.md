@@ -92,6 +92,17 @@ flowchart LR
     L --> L5["✅ Template Literal"]
     L --> L6["✅ Fn Expression"]
     L --> L7["✅ Arrow Fn"]
+    L --> L8["✅ IIFE / Default Params"]
+    L --> L9["✅ Closures / HOF"]
+
+    L --> M[chapter_13<br/>Strings]
+    M --> N[chapter_14<br/>Objects]
+    N --> O[chapter_15<br/>2D Arrays]
+    O --> P[chapter_16<br/>Callbacks]
+    P --> Q[chapter_17<br/>Promises]
+    Q --> R[chapter_18<br/>Async/Await]
+    R --> S[chapter_19<br/>Playwright Basics]
+    S --> T[chapter_20<br/>TypeScript]
 
     style A fill:#4a90d9,color:#fff
     style B fill:#50b86c,color:#fff
@@ -105,6 +116,14 @@ flowchart LR
     style J fill:#1abc9c,color:#fff
     style K fill:#e91e63,color:#fff
     style L fill:#a855f7,color:#fff
+    style M fill:#e74c3c,color:#fff
+    style N fill:#f39c12,color:#fff
+    style O fill:#3498db,color:#fff
+    style P fill:#1abc9c,color:#fff
+    style Q fill:#e91e63,color:#fff
+    style R fill:#50b86c,color:#fff
+    style S fill:#4a90d9,color:#fff
+    style T fill:#a855f7,color:#fff
 ```
 
 ---
@@ -124,8 +143,15 @@ flowchart LR
 | 09  | **User Input**               | `68_User_Input.js` · `69_Node_readline.js` · `70_prompt_sync.js` |
 | 10  | **Loops**                    | `71_For_loop.js` · `72_For_loop.js` · `73_For_Loop2.js` · `74_IQ.js` · `75_For_OF_IN_EACH.js` · `76_While.js` · `77_Do_While.js` · `78_Do_While.js` · `79_IQ.js` · `80_IQ.js` · `81_IQ.js` · `82_IQ.js` |
 | 11  | **Arrays**                   | `83_Arrays.js` · `84_Arrays.js` · `85_Access_Array.js` · `86_Arrays_Adding_Remove.js` · `87_Adding_Remove2.js` · `88_REAL_Example.js` · `89_Searching.js` · `90_Iterate.js` · `91_Transform_Array.js` · `92_Arrays.js` · `93_Array_Slicing.js` · `94_Concat_array.js` · `95_Array_Checking.js` |
-| 12  | **Functions**                | `96_Functions.js` · `97_Type1_Fn_Basic_Functions.js` · `98_Type2_Fn_With_Param_No_Return.js` · `99_Type3_Fn_without_Param_Return_Type.js` · `100_Type4_Fn_With_Param_With_Return.js` · `101_Template_literal.js` · `102_Fn_Expression.js` · `103_Arrow_Fn.js` |
-| 13  | **Assignments**              | `Assignment_1.js` · `Assignment_2.js` · `Assignment_3.js` · `Assignment_4.js` · `Assignment_5.js` · `Assignment_6.js` · `Assignment_7.js` |
+| 12  | **Functions**                | `96_Functions.js` · `97_Type1_Fn_Basic_Functions.js` · `98_Type2_Fn_With_Param_No_Return.js` · `99_Type3_Fn_without_Param_Return_Type.js` · `100_Type4_Fn_With_Param_With_Return.js` · `101_Template_literal.js` · `102_Fn_Expression.js` · `103_Arrow_Fn.js` · `104_Arrow_Fn_REAL.js` · `105_IIFE.js` · `106_Default_Param_Fn.js` · `107_IQ.js` · `108_Rest_Param_Fn.js` · `109_IQ.js` · `110_Spead_IQ.js` · `111_Scope._Fn.js` · `112_IQ.js` · `113_Closure.js` · `114_Closure.js` · `115_API_REAL_Closure.js` · `116_Higher_Order_Fn.js` · `117_Pure_Fn.js` |
+| 13  | **Strings**                  | `118_Strings.js` · `119_String_Properties.js` · `120_Search_Check_Str.js` · `121_Substring.js` · `122_Transform_Str.js` · `123_SC.js` |
+| 14  | **Objects**                  | `124_Objects.js` · `125_Objects2.js` · `126_Objects_Creation.js` · `127_Objects_REAL.js` · `128_Primitive_Ref.js` · `129_Ob_Examples.js` · `130_IQ.js` · `131_Object_Fn.js` · `132_Obj_Decon.js` · `133_Spead.js` · `134_Objects_GET_SET_Methods.js` · `136_Obj_REAL.js` · `137_Let_const_obj.js` |
+| 15  | **2D Arrays**                | `138_2D_Array.js` · `139_2d.js` · `140_REAL.js` · `141_2d_Array_Fn.js` · `142_IQ_Right_Pattern_Py.js` |
+| 16  | **Callbacks**                | `143_Callback.js` · `144_CB.js` · `145_CB_Fn.js` · `146_PW_CB.js` · `147_JS_CB.js` · `148_Sync_CB.js` · `149_Async_CB.js` · `150_CB_Hell.js` · `151_CB_Hell_20_Steps.js` · `152_CB_Parameter.js` · `153_CB_Return.js` |
+| 17  | **Promises**                 | `154_Promise.js` · `155_Promise_REAL_API.js` · `156_Promise_REAL_API_PART2.js` · `157_Finally.js` · `158_Call_Py_Problem.js` · `159_Promise_ALL.js` · `160_Promise_IQ.js` |
+| 18  | **Async / Await**            | `161_Async.js` · `162_Aysnc_P2.js` · `163_PyODom.js` · `164_Async_Ex.js` · `165_AA_Parallel.js` · `165_AA_Seq.js` · `166_IQ.js` · `167_ACLogin.js` |
+| 19  | **Playwright Basics**        | `playwright.config.ts` · `tests/` · `package.json` |
+| 20  | **TypeScript Basics**        | `logger.js` · `testutils.js` · `utils.js` · `EXPORT_IMPORT/` |
 
 ---
 
@@ -656,11 +682,224 @@ flowchart LR
 | `101_Template_literal.js` | Using template literals in functions |
 | `102_Fn_Expression.js` | Function expressions |
 | `103_Arrow_Fn.js` | Arrow function syntax |
+| `104_Arrow_Fn_REAL.js` | Real-world arrow function usage |
+| `105_IIFE.js` | Immediately Invoked Function Expressions |
+| `106_Default_Param_Fn.js` | Default parameter values |
+| `107_IQ.js` | Interview question — default params |
+| `108_Rest_Param_Fn.js` | Rest parameters (`...args`) |
+| `109_IQ.js` | Interview question — rest params |
+| `110_Spead_IQ.js` | Spread operator interview question |
+| `111_Scope._Fn.js` | Function scope rules |
+| `112_IQ.js` | Scope interview question |
+| `113_Closure.js` | Closures introduction |
+| `114_Closure.js` | Closures advanced |
+| `115_API_REAL_Closure.js` | Real API use-case with closures |
+| `116_Higher_Order_Fn.js` | Higher-order functions (map/filter/reduce) |
+| `117_Pure_Fn.js` | Pure functions and side effects |
 
 </details>
 
 <details open>
-<summary><strong>⚪ Chapter 13 — Assignments</summary>
+<summary><strong>🔴 Chapter 13 — Strings</strong></summary>
+<br>
+
+Covers string creation, properties, searching, substring extraction, and transformation methods in JavaScript.
+
+```mermaid
+flowchart LR
+    STR["Strings"] --> P["Properties (length)"]
+    STR --> S["Search / Check"]
+    STR --> SB["Substring"]
+    STR --> T["Transform"]
+    style STR fill:#e74c3c,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `118_Strings.js` | String basics and creation |
+| `119_String_Properties.js` | `length` and string properties |
+| `120_Search_Check_Str.js` | `includes`, `startsWith`, `endsWith`, `indexOf` |
+| `121_Substring.js` | `slice`, `substring`, `substr` |
+| `122_Transform_Str.js` | `toUpperCase`, `toLowerCase`, `trim`, `replace`, `split` |
+| `123_SC.js` | String cheat-sheet patterns |
+
+</details>
+
+<details open>
+<summary><strong>🟡 Chapter 14 — Objects</strong></summary>
+<br>
+
+Covers object creation, access, methods, destructuring, spread, getters/setters, and the difference between primitive and reference types.
+
+```mermaid
+flowchart LR
+    OBJ["Objects"] --> C["Create / Access"]
+    OBJ --> M["Methods"]
+    OBJ --> D["Destructuring"]
+    OBJ --> S["Spread"]
+    OBJ --> GS["Getters / Setters"]
+    style OBJ fill:#f39c12,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `124_Objects.js` | Object basics — key/value pairs |
+| `125_Objects2.js` | More object examples |
+| `126_Objects_Creation.js` | Object literal, `new Object()`, constructor |
+| `127_Objects_REAL.js` | Real-world object usage |
+| `128_Primitive_Ref.js` | Primitive vs reference type behaviour |
+| `129_Ob_Examples.js` | Object examples |
+| `130_IQ.js` | Interview question |
+| `131_Object_Fn.js` | Object methods |
+| `132_Obj_Decon.js` | Object destructuring |
+| `133_Spead.js` | Object spread (`...`) |
+| `134_Objects_GET_SET_Methods.js` | Getters and setters |
+| `136_Obj_REAL.js` | Real-world object patterns |
+| `137_Let_const_obj.js` | `let` vs `const` with objects |
+
+</details>
+
+<details open>
+<summary><strong>🔵 Chapter 15 — 2D Arrays</strong></summary>
+<br>
+
+Covers multi-dimensional arrays, matrix operations, and real-world patterns like test data grids.
+
+```mermaid
+flowchart LR
+    TDA["2D Arrays"] --> C["Create Matrix"]
+    TDA --> A["Access [row][col]"]
+    TDA --> F["Functions on 2D"]
+    style TDA fill:#3498db,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `138_2D_Array.js` | 2D array creation and access |
+| `139_2d.js` | More 2D array patterns |
+| `140_REAL.js` | Real-world 2D array usage |
+| `141_2d_Array_Fn.js` | Functions operating on 2D arrays |
+| `142_IQ_Right_Pattern_Py.js` | Interview question — matrix patterns |
+
+</details>
+
+<details open>
+<summary><strong>🟢 Chapter 16 — Callbacks</strong></summary>
+<br>
+
+Covers the callback pattern — synchronous vs asynchronous callbacks, callback hell, and Playwright-specific callback usage.
+
+```mermaid
+flowchart LR
+    CB["Callbacks"] --> S["Sync CB"]
+    CB --> A["Async CB"]
+    CB --> H["CB Hell"]
+    CB --> PW["Playwright CB"]
+    style CB fill:#1abc9c,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `143_Callback.js` | Callback basics |
+| `144_CB.js` | More callback patterns |
+| `145_CB_Fn.js` | Callback as function argument |
+| `146_PW_CB.js` | Playwright-style callbacks |
+| `147_JS_CB.js` | JS built-in callbacks (forEach, map) |
+| `148_Sync_CB.js` | Synchronous callback |
+| `149_Async_CB.js` | Asynchronous callback |
+| `150_CB_Hell.js` | Callback hell introduction |
+| `151_CB_Hell_20_Steps.js` | Deep callback hell — 20 steps |
+| `152_CB_Parameter.js` | Callback with parameters |
+| `153_CB_Return.js` | Callback with return value |
+
+</details>
+
+<details open>
+<summary><strong>🔴 Chapter 17 — Promises</strong></summary>
+<br>
+
+Covers the Promise API — resolve/reject, chaining, `finally`, `Promise.all`, and real API call patterns.
+
+```mermaid
+flowchart LR
+    P["Promise"] --> R["resolve / reject"]
+    P --> C["then / catch / finally"]
+    P --> ALL["Promise.all"]
+    P --> API["Real API calls"]
+    style P fill:#e91e63,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `154_Promise.js` | Promise basics — resolve/reject |
+| `155_Promise_REAL_API.js` | Real API call with Promise |
+| `156_Promise_REAL_API_PART2.js` | Real API call — Part 2 |
+| `157_Finally.js` | `finally` block |
+| `158_Call_Py_Problem.js` | Callback pyramid → Promise solution |
+| `159_Promise_ALL.js` | `Promise.all` — parallel execution |
+| `160_Promise_IQ.js` | Promise interview question |
+
+</details>
+
+<details open>
+<summary><strong>🟢 Chapter 18 — Async / Await</strong></summary>
+<br>
+
+Covers `async`/`await` syntax — sequential vs parallel execution, real login flows, and interview patterns.
+
+```mermaid
+flowchart LR
+    AA["Async/Await"] --> S["Sequential"]
+    AA --> P["Parallel"]
+    AA --> L["Login flow"]
+    AA --> IQ["IQ patterns"]
+    style AA fill:#50b86c,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `161_Async.js` | `async`/`await` basics |
+| `162_Aysnc_P2.js` | Async — Part 2 |
+| `163_PyODom.js` | Pyramid of doom → async solution |
+| `164_Async_Ex.js` | Async examples |
+| `165_AA_Parallel.js` | Parallel execution with `Promise.all` |
+| `165_AA_Seq.js` | Sequential async execution |
+| `166_IQ.js` | Async interview question |
+| `167_ACLogin.js` | Real login automation with async/await |
+
+</details>
+
+<details open>
+<summary><strong>🔵 Chapter 19 — Playwright Basics</strong></summary>
+<br>
+
+First hands-on Playwright tests — project setup, config, and initial test suite.
+
+| File | Concept |
+|------|---------|
+| `playwright.config.ts` | Playwright configuration |
+| `package.json` | Project dependencies |
+| `tests/` | Test files |
+
+</details>
+
+<details open>
+<summary><strong>🟣 Chapter 20 — TypeScript Basics</strong></summary>
+<br>
+
+Covers TypeScript utilities used in Playwright projects — logger, test utils, helper functions, and import/export patterns.
+
+| File | Concept |
+|------|---------|
+| `logger.js` | Logger utility |
+| `testutils.js` | Test utility functions |
+| `utils.js` | General helper functions |
+| `EXPORT_IMPORT/` | ES module import/export patterns |
+
+</details>
+
+<details open>
+<summary><strong>⚪ Assignments</strong></summary>
 <br>
 
 Hands-on exercises covering HTTP status categorization, test pass/fail verdicts, bug severity classification, build health reporting, and login lockout logic.

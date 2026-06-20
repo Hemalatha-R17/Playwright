@@ -5,6 +5,6 @@ console.log(4);
 console.log(5);
 console.log("...");
 console.log(10);
-// For Loop
+
 // For Loop
 // Help you to repeat a block of code.
