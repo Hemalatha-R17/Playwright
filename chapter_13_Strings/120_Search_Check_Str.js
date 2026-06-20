@@ -3,27 +3,24 @@
 let url = "https://staging.vwo.com/api/login?retry=true";
 
 // incudes
-console.log(url.includes("staging"));
-console.log(url.includes("production"));
+console.log(url.includes("staging")); //true
+console.log(url.includes("production")); //false
 
 // startsWith / endsWith
-url.startsWith("https"); // true
-url.startsWith("http://");  //fasle
-url.endsWith("true");  // true
-
+console.log(url.startsWith("https")); // true
+console.log(url.startsWith("http://")); //false
+console.log(url.endsWith("true")); // true
 
 // indexOf / lastIndexOf
-console.log(url.indexOf("a"));
-console.log(url.lastIndexOf("a"));
+console.log(url.indexOf("a")); //10
+console.log(url.lastIndexOf("a")); //24
 
-console.log(url.indexOf("nothere"));
-console.log(url.indexOf("x"));
+console.log(url.indexOf("nothere")); //-1
+console.log(url.indexOf("x")); //-1
 
 //
-console.log(url.search(/login/));
-console.log(url.search(/vwo/));
+console.log(url.search(/login/)); //28
+console.log(url.search(/vwo/)); //16
 
 // /regex/ - Regular EXPRESSION - These are nothing but A-patterns that you can find within
-//  the strings automatically. 
-
-
+//  the strings automatically.

@@ -144,7 +144,7 @@ flowchart LR
 | 10  | **Loops**                    | `71_For_loop.js` · `72_For_loop.js` · `73_For_Loop2.js` · `74_IQ.js` · `75_For_OF_IN_EACH.js` · `76_While.js` · `77_Do_While.js` · `78_Do_While.js` · `79_IQ.js` · `80_IQ.js` · `81_IQ.js` · `82_IQ.js` |
 | 11  | **Arrays**                   | `83_Arrays.js` · `84_Arrays.js` · `85_Access_Array.js` · `86_Arrays_Adding_Remove.js` · `87_Adding_Remove2.js` · `88_REAL_Example.js` · `89_Searching.js` · `90_Iterate.js` · `91_Transform_Array.js` · `92_Arrays.js` · `93_Array_Slicing.js` · `94_Concat_array.js` · `95_Array_Checking.js` |
 | 12  | **Functions**                | `96_Functions.js` · `97_Type1_Fn_Basic_Functions.js` · `98_Type2_Fn_With_Param_No_Return.js` · `99_Type3_Fn_without_Param_Return_Type.js` · `100_Type4_Fn_With_Param_With_Return.js` · `101_Template_literal.js` · `102_Fn_Expression.js` · `103_Arrow_Fn.js` · `104_Arrow_Fn_REAL.js` · `105_IIFE.js` · `106_Default_Param_Fn.js` · `107_IQ.js` · `108_Rest_Param_Fn.js` · `109_IQ.js` · `110_Spead_IQ.js` · `111_Scope._Fn.js` · `112_IQ.js` · `113_Closure.js` · `114_Closure.js` · `115_API_REAL_Closure.js` · `116_Higher_Order_Fn.js` · `117_Pure_Fn.js` |
-| 13  | **Strings**                  | `118_Strings.js` · `119_String_Properties.js` · `120_Search_Check_Str.js` · `121_Substring.js` · `122_Transform_Str.js` · `123_SC.js` |
+| 13  | **Strings**                  | `118_Strings.js` · `119_String_Properties.js` · `120_Search_Check_Str.js` · `121_Substring.js` · `122_Transform_Str.js` · `123_String_Conversion.js` |
 | 14  | **Objects**                  | `124_Objects.js` · `125_Objects2.js` · `126_Objects_Creation.js` · `127_Objects_REAL.js` · `128_Primitive_Ref.js` · `129_Ob_Examples.js` · `130_IQ.js` · `131_Object_Fn.js` · `132_Obj_Decon.js` · `133_Spead.js` · `134_Objects_GET_SET_Methods.js` · `136_Obj_REAL.js` · `137_Let_const_obj.js` |
 | 15  | **2D Arrays**                | `138_2D_Array.js` · `139_2d.js` · `140_REAL.js` · `141_2d_Array_Fn.js` · `142_IQ_Right_Pattern_Py.js` |
 | 16  | **Callbacks**                | `143_Callback.js` · `144_CB.js` · `145_CB_Fn.js` · `146_PW_CB.js` · `147_JS_CB.js` · `148_Sync_CB.js` · `149_Async_CB.js` · `150_CB_Hell.js` · `151_CB_Hell_20_Steps.js` · `152_CB_Parameter.js` · `153_CB_Return.js` |
@@ -291,7 +291,8 @@ Playwright/
         ├── Assignment_4.js
         ├── Assignment_5.js
         ├── Assignment_6.js
-        └── Assignment_7.js
+        ├── Assignment_7.js
+        └── Assignment_8.js
 ```
 
 ---
@@ -721,7 +722,7 @@ flowchart LR
 | `120_Search_Check_Str.js` | `includes`, `startsWith`, `endsWith`, `indexOf` |
 | `121_Substring.js` | `slice`, `substring`, `substr` |
 | `122_Transform_Str.js` | `toUpperCase`, `toLowerCase`, `trim`, `replace`, `split` |
-| `123_SC.js` | String cheat-sheet patterns |
+| `123_String_Conversion.js` | Type conversion — `toString()`, `Number()`, `parseInt()`, `parseFloat()` |
 
 </details>
 
@@ -913,6 +914,7 @@ Hands-on exercises covering HTTP status categorization, test pass/fail verdicts,
 | `Assignment_5.js` | Login Lockout After Failed Attempts |
 | `Assignment_6.js` | Triangle Classifier |
 | `Assignment_7.js` | FizzBuzz Test |
+| `Assignment_8.js` | String Reverse & Palindrome Check |
 
 </details>
 
