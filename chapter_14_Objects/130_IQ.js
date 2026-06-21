@@ -1,24 +1,22 @@
 const user = {
-    name: "John",
-    age: 30,
-    email: "john@example.com"
+  name: "John",
+  age: 30,
+  email: "john@example.com",
 };
 
-console.log(user);
-console.log(user.name);
-console.log(user["age"]);
-
+console.log(user); //{ name: 'John', age: 30, email: 'john@example.com' }
+console.log(user.name); //John
+console.log(user["age"]); //30
 
 // Dynamic property access
 const key = "age";
-console.log(user[key]);
+console.log(user[key]); //30
 
 // Adding/modifying properties
 user.city = "NYC";
 user.age = 31;
 
-console.log(user);
-
+console.log(user); //{ name: 'John', age: 31, email: 'john@example.com', city: 'NYC' }
 
 let obj = { name: "Login" };
 console.log(Object.getOwnPropertyDescriptor(obj, "name"));

@@ -145,7 +145,7 @@ flowchart LR
 | 11  | **Arrays**                   | `83_Arrays.js` · `84_Arrays.js` · `85_Access_Array.js` · `86_Arrays_Adding_Remove.js` · `87_Adding_Remove2.js` · `88_REAL_Example.js` · `89_Searching.js` · `90_Iterate.js` · `91_Transform_Array.js` · `92_Arrays.js` · `93_Array_Slicing.js` · `94_Concat_array.js` · `95_Array_Checking.js` |
 | 12  | **Functions**                | `96_Functions.js` · `97_Type1_Fn_Basic_Functions.js` · `98_Type2_Fn_With_Param_No_Return.js` · `99_Type3_Fn_without_Param_Return_Type.js` · `100_Type4_Fn_With_Param_With_Return.js` · `101_Template_literal.js` · `102_Fn_Expression.js` · `103_Arrow_Fn.js` · `104_Arrow_Fn_REAL.js` · `105_IIFE.js` · `106_Default_Param_Fn.js` · `107_IQ.js` · `108_Rest_Param_Fn.js` · `109_IQ.js` · `110_Spead_IQ.js` · `111_Scope._Fn.js` · `112_IQ.js` · `113_Closure.js` · `114_Closure.js` · `115_API_REAL_Closure.js` · `116_Higher_Order_Fn.js` · `117_Pure_Fn.js` |
 | 13  | **Strings**                  | `118_Strings.js` · `119_String_Properties.js` · `120_Search_Check_Str.js` · `121_Substring.js` · `122_Transform_Str.js` · `123_String_Conversion.js` |
-| 14  | **Objects**                  | `124_Objects.js` · `125_Objects2.js` · `126_Objects_Creation.js` · `127_Objects_REAL.js` · `128_Primitive_Ref.js` · `129_Ob_Examples.js` · `130_IQ.js` · `131_Object_Fn.js` · `132_Obj_Decon.js` · `133_Spead.js` · `134_Objects_GET_SET_Methods.js` · `136_Obj_REAL.js` · `137_Let_const_obj.js` |
+| 14  | **Objects**                  | `124_Objects.js` · `125_Objects2.js` · `126_Objects_Creation.js` · `127_Objects_REAL.js` · `128_Primitive_Ref.js` · `129_Ob_Examples.js` · `130_IQ.js` · `131_Object_Fn.js` · `132_Obj_Decon.js` · `133_Spead.js` · `134_Objects_GET_SET_Methods.js` · `135_IQ` · `136_Obj_REAL.js` · `137_Let_const_obj.js` |
 | 15  | **2D Arrays**                | `138_2D_Array.js` · `139_2d.js` · `140_REAL.js` · `141_2d_Array_Fn.js` · `142_IQ_Right_Pattern_Py.js` |
 | 16  | **Callbacks**                | `143_Callback.js` · `144_CB.js` · `145_CB_Fn.js` · `146_PW_CB.js` · `147_JS_CB.js` · `148_Sync_CB.js` · `149_Async_CB.js` · `150_CB_Hell.js` · `151_CB_Hell_20_Steps.js` · `152_CB_Parameter.js` · `153_CB_Return.js` |
 | 17  | **Promises**                 | `154_Promise.js` · `155_Promise_REAL_API.js` · `156_Promise_REAL_API_PART2.js` · `157_Finally.js` · `158_Call_Py_Problem.js` · `159_Promise_ALL.js` · `160_Promise_IQ.js` |
@@ -756,6 +756,7 @@ flowchart LR
 | `132_Obj_Decon.js` | Object destructuring |
 | `133_Spead.js` | Object spread (`...`) |
 | `134_Objects_GET_SET_Methods.js` | Getters and setters |
+| `135_IQ` | Object interview questions |
 | `136_Obj_REAL.js` | Real-world object patterns |
 | `137_Let_const_obj.js` | `let` vs `const` with objects |
 

@@ -2,8 +2,7 @@ const obj1 = { a: 1, b: 2 };
 const obj2 = { c: 3, d: 4 };
 
 const copy = { ...obj1 };
-console.log(copy)
-
+console.log(copy); //{ a: 1, b: 2 }
 
 let config1 = { browser: "Chrome", timeout: 3000 };
 // ✅ Modifying properties — ALLOWED
@@ -16,7 +15,7 @@ config1 = { browser: "Safari" };
 console.log(config1);
 
 // print
-console.log("---- ")
+console.log("---- ");
 
 const config = { browser: "Chrome", timeout: 3000 };
 // ✅ Modifying properties — ALLOWED

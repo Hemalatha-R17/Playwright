@@ -1,14 +1,11 @@
 const t_json = {
-    "name": "pramod",
-    "age": 10
+  name: "pramod",
+  age: 10,
 };
-console.log(t_json);
-
+console.log(t_json); //{ name: 'pramod', age: 10 }
 
 const t_js = {
-    name: "pramod",
-    age: 10
+  name: "pramod",
+  age: 10,
 };
-console.log(t_js);
-
-
+console.log(t_js); //{ name: 'pramod', age: 10 }
