@@ -900,16 +900,19 @@ flowchart LR
 <summary><strong>🟣 Chapter 20 — TypeScript Basics</strong></summary>
 <br>
 
-Covers ES module patterns used in Playwright projects — named/default exports, imports, logger utilities, and shared test helpers.
+Covers ES module patterns used in Playwright projects — named/default exports, imports, logger utilities, shared test helpers, and a deep-dive on Objects vs Classes.
 
 ```mermaid
 flowchart LR
     TU["testutils.js<br/>BASE_URL · formatUpperCaseString"] -->|named import| EI["168_EXPORT_IMPORT.js"]
     L["logger.js<br/>log (default) · log2 (named)"] -->|default import| LG["170_Logger.js"]
+    OC["Objects vs Classes<br/>literals · blueprints · inheritance"] --> OCD["Objects_vs_Classes.md"]
     style TU fill:#a855f7,color:#fff
     style L fill:#a855f7,color:#fff
     style EI fill:#a855f7,color:#fff
     style LG fill:#a855f7,color:#fff
+    style OC fill:#a855f7,color:#fff
+    style OCD fill:#a855f7,color:#fff
 ```
 
 | File | Concept |
@@ -919,7 +922,9 @@ flowchart LR
 | `testutils.js` | Named exports — `BASE_URL` constant and `formatUpperCaseString()` helper |
 | `utils.js` | General helper functions |
 | `EXPORT_IMPORT/168_EXPORT_IMPORT.js` | Named import of `BASE_URL` and `formatUpperCaseString` from `testutils.js` |
+| `EXPORT_IMPORT/ExplainDefault.md` | Named vs default export explained with side-by-side comparison |
 | `EXPORT_IMPORT/170_Logger.js` | Default import of `log` from `logger.js` |
+| `Objects_vs_Classes.md` | Objects vs Classes — literals, blueprints, destructuring, inheritance, getters/setters, static, private fields |
 
 </details>
 
