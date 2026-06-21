@@ -293,7 +293,9 @@ Playwright/
         ├── Assignment_6.js
         ├── Assignment_7.js
         ├── Assignment_8.js
-        └── Assignment_9.js
+        ├── Assignment_9.js
+        ├── Assignment_10.js
+        └── Assignment_11.js
 ```
 
 ---
@@ -779,10 +781,10 @@ flowchart LR
 | File | Concept |
 |------|---------|
 | `138_2D_Array.js` | 2D array creation and access |
-| `139_2d.js` | More 2D array patterns |
-| `140_REAL.js` | Real-world 2D array usage |
-| `141_2d_Array_Fn.js` | Functions operating on 2D arrays |
-| `142_IQ_Right_Pattern_Py.js` | Interview question — matrix patterns |
+| `139_2D_Array_IQ.js` | 2D array basics — matrix vs grid, row/col access |
+| `140_REAL.js` | Real-world 2D array usage — test matrix iteration |
+| `141_2d_Array_Fn.js` | Functions on 2D arrays — map/reduce, finding failures |
+| `142_IQ_Right_Pattern_Py.js` | Interview question — right-aligned star pattern |
 
 </details>
 
@@ -918,6 +920,8 @@ Hands-on exercises covering HTTP status categorization, test pass/fail verdicts,
 | `Assignment_7.js` | FizzBuzz Test |
 | `Assignment_8.js` | String Reverse & Palindrome Check |
 | `Assignment_9.js` | Anagram Checker |
+| `Assignment_10.js` | Reverse Star Pattern |
+| `Assignment_11.js` | Triangle Star Pattern |
 
 </details>
 
