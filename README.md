@@ -900,14 +900,26 @@ flowchart LR
 <summary><strong>🟣 Chapter 20 — TypeScript Basics</strong></summary>
 <br>
 
-Covers TypeScript utilities used in Playwright projects — logger, test utils, helper functions, and import/export patterns.
+Covers ES module patterns used in Playwright projects — named/default exports, imports, logger utilities, and shared test helpers.
+
+```mermaid
+flowchart LR
+    TU["testutils.js<br/>BASE_URL · formatUpperCaseString"] -->|named import| EI["168_EXPORT_IMPORT.js"]
+    L["logger.js<br/>log (default) · log2 (named)"] -->|default import| LG["170_Logger.js"]
+    style TU fill:#a855f7,color:#fff
+    style L fill:#a855f7,color:#fff
+    style EI fill:#a855f7,color:#fff
+    style LG fill:#a855f7,color:#fff
+```
 
 | File | Concept |
 |------|---------|
-| `logger.js` | Logger utility |
-| `testutils.js` | Test utility functions |
+| `package.json` | `"type": "module"` — enables ES module (`import`/`export`) syntax in Node.js |
+| `logger.js` | Default export `log()` + named export `log2()` — logging utilities |
+| `testutils.js` | Named exports — `BASE_URL` constant and `formatUpperCaseString()` helper |
 | `utils.js` | General helper functions |
-| `EXPORT_IMPORT/` | ES module import/export patterns |
+| `EXPORT_IMPORT/168_EXPORT_IMPORT.js` | Named import of `BASE_URL` and `formatUpperCaseString` from `testutils.js` |
+| `EXPORT_IMPORT/170_Logger.js` | Default import of `log` from `logger.js` |
 
 </details>
 

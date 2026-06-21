@@ -1,4 +1,4 @@
-import { BASE_URL, formatTestName } from "../testutils.js";
+import { BASE_URL, formatUpperCaseString } from "../testutils.js";
 
 console.log(BASE_URL);
 let result = formatUpperCaseString("login page");

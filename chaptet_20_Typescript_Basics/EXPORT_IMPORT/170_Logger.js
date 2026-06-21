@@ -1,3 +1,3 @@
-import log from '../logger.js';
+import log from "../logger.js";
 
-log("starting the test cases")
+log("starting the test cases");
