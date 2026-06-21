@@ -1,28 +1,33 @@
-// async function sayHello() {
-//     return "Hello, QA!";
-// }
+async function sayHello() {
+  return "Hello, QA!";
+}
 
-// sayHello().then(function (msg) {
-//     console.log(msg);
-// });
+sayHello().then(function (msg) {
+  console.log(msg);
+});
+// o/p: Hello, QA!
 
-// async function getStatus() {
-//     let status = await Promise.resolve(200);
-//     console.log("Status code:", status);
-// }
+async function getStatus() {
+  let status = await Promise.resolve(200);
+  console.log("Status code:", status);
+}
 
-// getStatus();
-
+getStatus();
+// o/p: Status code: 200
 
 async function testFlow() {
-    let step1 = await Promise.resolve("Opened browser");
-    console.log(step1);
+  let step1 = await Promise.resolve("Opened browser");
+  console.log(step1);
 
-    let step2 = await Promise.resolve("Clicked login");
-    console.log(step2);
+  let step2 = await Promise.resolve("Clicked login");
+  console.log(step2);
 
-    let step3 = await Promise.resolve("Verified dashboard");
-    console.log(step3);
+  let step3 = await Promise.resolve("Verified dashboard");
+  console.log(step3);
 }
 
 testFlow();
+// o/p:
+// Opened browser
+// Clicked login
+// Verified dashboard

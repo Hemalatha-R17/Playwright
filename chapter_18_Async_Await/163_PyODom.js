@@ -1,25 +1,25 @@
 function openBrowser() {
-    return new Promise(function (resolve) {
-        resolve("Browser opened!");
-    });
+  return new Promise(function (resolve) {
+    resolve("Browser opened!");
+  });
 }
 
 function goToLogin() {
-    return new Promise(function (resolve) {
-        resolve("Login page loaded");
-    });
+  return new Promise(function (resolve) {
+    resolve("Login page loaded");
+  });
 }
 
 function enterCredentials() {
-    return new Promise(function (resolve) {
-        resolve("Credentials entered");
-    });
+  return new Promise(function (resolve) {
+    resolve("Credentials entered");
+  });
 }
 
 function clickLogin() {
-    return new Promise(function (resolve) {
-        resolve("Logged in successfully");
-    });
+  return new Promise(function (resolve) {
+    resolve("Logged in successfully");
+  });
 }
 
 // openBrowser()
@@ -40,18 +40,23 @@ function clickLogin() {
 //         console.log("Done execution!");
 //     });
 
-
 async function runTheE2E() {
-    let msg1 = await openBrowser();
-    console.log("Step 1:", msg1);
+  let msg1 = await openBrowser();
+  console.log("Step 1:", msg1);
 
-    let msg2 = await goToLogin();
-    console.log("Step 2:", msg2);
+  let msg2 = await goToLogin();
+  console.log("Step 2:", msg2);
 
-    let msg3 = await enterCredentials();
-    console.log("Step 3:", msg3);
+  let msg3 = await enterCredentials();
+  console.log("Step 3:", msg3);
 
-    let msg4 = await clickLogin();
-    console.log("Step 4:", msg4);
+  let msg4 = await clickLogin();
+  console.log("Step 4:", msg4);
 }
 runTheE2E();
+
+// o/p:
+// Step 1: Browser opened!
+// Step 2: Login page loaded
+// Step 3: Credentials entered
+// Step 4: Logged in successfully

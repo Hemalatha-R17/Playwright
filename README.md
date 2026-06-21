@@ -823,7 +823,7 @@ flowchart LR
 <summary><strong>🔴 Chapter 17 — Promises</strong></summary>
 <br>
 
-Covers the Promise API — resolve/reject, chaining, `finally`, `Promise.all`, and real API call patterns.
+Covers the Promise API — resolve/reject, chaining, `finally`, `Promise.all`, and real API call patterns. Files include inline expected outputs for easy reference.
 
 ```mermaid
 flowchart LR
@@ -850,7 +850,7 @@ flowchart LR
 <summary><strong>🟢 Chapter 18 — Async / Await</strong></summary>
 <br>
 
-Covers `async`/`await` syntax — sequential vs parallel execution, real login flows, and interview patterns.
+Covers `async`/`await` syntax — sequential vs parallel execution, real login flows, and interview patterns. Files include inline expected outputs for easy reference.
 
 ```mermaid
 flowchart LR

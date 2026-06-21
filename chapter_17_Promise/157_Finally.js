@@ -1,17 +1,24 @@
 let testRun = new Promise(function (resolve, reject) {
-    let apiCall = true;
-    if (apiCall) {
-        resolve({ "status": "done" });
-    } else {
-        reject("Assertion Failed");
-    }
+  let apiCall = true;
+  if (apiCall) {
+    resolve({ status: "done" });
+  } else {
+    reject("Assertion Failed");
+  }
 });
 
-testRun.then(function (data) {
+testRun
+  .then(function (data) {
     console.log(data);
-}).catch(function (error) {
+  })
+  .catch(function (error) {
     console.log(error);
-}).finally(function () {
-    // This code will be always executed anyhow. 
+  })
+  .finally(function () {
+    // This code will be always executed anyhow.
     console.log("I will be execued anyHow!");
-})
+  });
+
+//o/p
+// { status: 'done' }
+// I will be execued anyHow!
