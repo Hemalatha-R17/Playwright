@@ -890,9 +890,9 @@ flowchart LR
 
 | File | Concept |
 |------|---------|
-| `playwright.config.ts` | Playwright config — `testDir`, `testMatch: **/*.ts`, headless: false, Chromium |
+| `playwright.config.ts` | Full Playwright config — `testDir`, `fullyParallel`, CI retries/workers, HTML reporter, `headless: false`, trace on retry, Chromium project |
 | `package.json` | Project dependencies (`@playwright/test`) |
-| `tests/tta_cart_login.ts` | Login validation (invalid creds → error), successful login → Products page, aria snapshot of all 6 cart items |
+| `tests/tta_cart_login.spec.ts` | Login validation (invalid creds → error), successful login → Products page, aria snapshot of all 6 cart items |
 
 </details>
 
