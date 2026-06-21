@@ -878,13 +878,21 @@ flowchart LR
 <summary><strong>🔵 Chapter 19 — Playwright Basics</strong></summary>
 <br>
 
-First hands-on Playwright tests — project setup, config, and initial test suite.
+First hands-on Playwright tests — login flow validation and cart page assertions on TTA Cart using `@playwright/test`.
+
+```mermaid
+flowchart LR
+    PW["Playwright Test"] --> L["Login with invalid creds → assert error"]
+    PW --> V["Login with valid creds → assert Products page"]
+    PW --> C["Verify cart inventory items via aria snapshot"]
+    style PW fill:#4a90d9,color:#fff
+```
 
 | File | Concept |
 |------|---------|
-| `playwright.config.ts` | Playwright configuration |
-| `package.json` | Project dependencies |
-| `tests/` | Test files |
+| `playwright.config.ts` | Playwright config — `testDir`, `testMatch: **/*.ts`, headless: false, Chromium |
+| `package.json` | Project dependencies (`@playwright/test`) |
+| `tests/tta_cart_login.ts` | Login validation (invalid creds → error), successful login → Products page, aria snapshot of all 6 cart items |
 
 </details>
 
