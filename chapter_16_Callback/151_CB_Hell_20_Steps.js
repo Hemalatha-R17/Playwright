@@ -12,178 +12,175 @@
 // screen. That ever-growing indentation is the "Pyramid of Doom".
 // ============================================================================
 
-
 // ---- Step functions: each takes a callback, waits, logs, then calls back ----
 
 function openBrowser(callback) {
-    setTimeout(function () {
-        console.log("Step 01: Chrome browser opened");
-        callback();
-    }, 500);
+  setTimeout(function () {
+    console.log("Step 01: Chrome browser opened");
+    callback();
+  }, 500);
 }
 
-
 function maximizeWindow(callback) {
-    setTimeout(function () {
-        console.log("Step 02: Window maximized");
-        callback();
-    }, 300);
+  setTimeout(function () {
+    console.log("Step 02: Window maximized");
+    callback();
+  }, 300);
 }
 
 function navigateToHome(callback) {
-    setTimeout(function () {
-        console.log("Step 03: Navigated to https://app.vwo.com");
-        callback();
-    }, 800);
+  setTimeout(function () {
+    console.log("Step 03: Navigated to https://app.vwo.com");
+    callback();
+  }, 800);
 }
 
 function acceptCookies(callback) {
-    setTimeout(function () {
-        console.log("Step 04: Cookie banner accepted");
-        callback();
-    }, 300);
+  setTimeout(function () {
+    console.log("Step 04: Cookie banner accepted");
+    callback();
+  }, 300);
 }
 
 function goToLoginPage(callback) {
-    setTimeout(function () {
-        console.log("Step 05: Login page loaded");
-        callback();
-    }, 700);
+  setTimeout(function () {
+    console.log("Step 05: Login page loaded");
+    callback();
+  }, 700);
 }
 
 function enterUsername(callback) {
-    setTimeout(function () {
-        console.log("Step 06: Username entered");
-        callback();
-    }, 400);
+  setTimeout(function () {
+    console.log("Step 06: Username entered");
+    callback();
+  }, 400);
 }
 
 function enterPassword(callback) {
-    setTimeout(function () {
-        console.log("Step 07: Password entered");
-        callback();
-    }, 400);
+  setTimeout(function () {
+    console.log("Step 07: Password entered");
+    callback();
+  }, 400);
 }
 
 function clickLogin(callback) {
-    setTimeout(function () {
-        console.log("Step 08: Login button clicked");
-        callback();
-    }, 600);
+  setTimeout(function () {
+    console.log("Step 08: Login button clicked");
+    callback();
+  }, 600);
 }
 
 function waitForDashboard(callback) {
-    setTimeout(function () {
-        console.log("Step 09: Dashboard loaded");
-        callback();
-    }, 900);
+  setTimeout(function () {
+    console.log("Step 09: Dashboard loaded");
+    callback();
+  }, 900);
 }
 
 function searchProduct(callback) {
-    setTimeout(function () {
-        console.log("Step 10: Searched for 'wireless mouse'");
-        callback();
-    }, 500);
+  setTimeout(function () {
+    console.log("Step 10: Searched for 'wireless mouse'");
+    callback();
+  }, 500);
 }
 
 function applyFilter(callback) {
-    setTimeout(function () {
-        console.log("Step 11: Filter 'Price: Low to High' applied");
-        callback();
-    }, 400);
+  setTimeout(function () {
+    console.log("Step 11: Filter 'Price: Low to High' applied");
+    callback();
+  }, 400);
 }
 
 function selectProduct(callback) {
-    setTimeout(function () {
-        console.log("Step 12: Product selected from results");
-        callback();
-    }, 400);
+  setTimeout(function () {
+    console.log("Step 12: Product selected from results");
+    callback();
+  }, 400);
 }
 
 function viewProductDetails(callback) {
-    setTimeout(function () {
-        console.log("Step 13: Product details page opened");
-        callback();
-    }, 500);
+  setTimeout(function () {
+    console.log("Step 13: Product details page opened");
+    callback();
+  }, 500);
 }
 
 function addToCart(callback) {
-    setTimeout(function () {
-        console.log("Step 14: Product added to cart");
-        callback();
-    }, 400);
+  setTimeout(function () {
+    console.log("Step 14: Product added to cart");
+    callback();
+  }, 400);
 }
 
 function openCart(callback) {
-    setTimeout(function () {
-        console.log("Step 15: Cart opened");
-        callback();
-    }, 300);
+  setTimeout(function () {
+    console.log("Step 15: Cart opened");
+    callback();
+  }, 300);
 }
 
 function updateQuantity(callback) {
-    setTimeout(function () {
-        console.log("Step 16: Quantity updated to 2");
-        callback();
-    }, 400);
+  setTimeout(function () {
+    console.log("Step 16: Quantity updated to 2");
+    callback();
+  }, 400);
 }
 
 function proceedToCheckout(callback) {
-    setTimeout(function () {
-        console.log("Step 17: Proceeded to checkout");
-        callback();
-    }, 600);
+  setTimeout(function () {
+    console.log("Step 17: Proceeded to checkout");
+    callback();
+  }, 600);
 }
 
 function enterShippingAddress(callback) {
-    setTimeout(function () {
-        console.log("Step 18: Shipping address entered");
-        callback();
-    }, 500);
+  setTimeout(function () {
+    console.log("Step 18: Shipping address entered");
+    callback();
+  }, 500);
 }
 
 function selectShippingMethod(callback) {
-    setTimeout(function () {
-        console.log("Step 19: Shipping method 'Express' selected");
-        callback();
-    }, 400);
+  setTimeout(function () {
+    console.log("Step 19: Shipping method 'Express' selected");
+    callback();
+  }, 400);
 }
 
 function selectPaymentMethod(callback) {
-    setTimeout(function () {
-        console.log("Step 20: Payment method 'Card' selected");
-        callback();
-    }, 400);
+  setTimeout(function () {
+    console.log("Step 20: Payment method 'Card' selected");
+    callback();
+  }, 400);
 }
 
 function enterCardDetails(callback) {
-    setTimeout(function () {
-        console.log("Step 21: Card details entered");
-        callback();
-    }, 500);
+  setTimeout(function () {
+    console.log("Step 21: Card details entered");
+    callback();
+  }, 500);
 }
 
 function applyCoupon(callback) {
-    setTimeout(function () {
-        console.log("Step 22: Coupon 'SAVE10' applied");
-        callback();
-    }, 400);
+  setTimeout(function () {
+    console.log("Step 22: Coupon 'SAVE10' applied");
+    callback();
+  }, 400);
 }
 
 function placeOrder(callback) {
-    setTimeout(function () {
-        console.log("Step 23: Order placed");
-        callback();
-    }, 800);
+  setTimeout(function () {
+    console.log("Step 23: Order placed");
+    callback();
+  }, 800);
 }
 
 function verifyOrderConfirmation(callback) {
-    setTimeout(function () {
-        console.log("Step 24: Order confirmation #VWO-99213 verified");
-        callback();
-    }, 500);
+  setTimeout(function () {
+    console.log("Step 24: Order confirmation #VWO-99213 verified");
+    callback();
+  }, 500);
 }
-
 
 // ============================================================================
 // 👇 THE PYRAMID OF DOOM — 24 callbacks nested inside each other.
@@ -196,53 +193,57 @@ function verifyOrderConfirmation(callback) {
 // ============================================================================
 
 openBrowser(function () {
-    maximizeWindow(function () {
-        navigateToHome(function () {
-            acceptCookies(function () {
-                goToLoginPage(function () {
-                    enterUsername(function () {
-                        enterPassword(function () {
-                            clickLogin(function () {
-                                waitForDashboard(function () {
-                                    searchProduct(function () {
-                                        applyFilter(function () {
-                                            selectProduct(function () {
-                                                viewProductDetails(function () {
-                                                    addToCart(function () {
-                                                        openCart(function () {
-                                                            updateQuantity(function () {
-                                                                proceedToCheckout(function () {
-                                                                    enterShippingAddress(function () {
-                                                                        selectShippingMethod(function () {
-                                                                            selectPaymentMethod(function () {
-                                                                                enterCardDetails(function () {
-                                                                                    applyCoupon(function () {
-                                                                                        placeOrder(function () {
-                                                                                            verifyOrderConfirmation(function () {
-                                                                                                console.log("\n✅ TEST COMPLETE — full checkout journey passed!");
-                                                                                            });
-                                                                                        });
-                                                                                    });
-                                                                                });
-                                                                            });
-                                                                        });
-                                                                    });
-                                                                });
-                                                            });
-                                                        });
-                                                    });
-                                                });
+  maximizeWindow(function () {
+    navigateToHome(function () {
+      acceptCookies(function () {
+        goToLoginPage(function () {
+          enterUsername(function () {
+            enterPassword(function () {
+              clickLogin(function () {
+                waitForDashboard(function () {
+                  searchProduct(function () {
+                    applyFilter(function () {
+                      selectProduct(function () {
+                        viewProductDetails(function () {
+                          addToCart(function () {
+                            openCart(function () {
+                              updateQuantity(function () {
+                                proceedToCheckout(function () {
+                                  enterShippingAddress(function () {
+                                    selectShippingMethod(function () {
+                                      selectPaymentMethod(function () {
+                                        enterCardDetails(function () {
+                                          applyCoupon(function () {
+                                            placeOrder(function () {
+                                              verifyOrderConfirmation(
+                                                function () {
+                                                  console.log(
+                                                    "\n✅ TEST COMPLETE — full checkout journey passed!",
+                                                  );
+                                                },
+                                              );
                                             });
+                                          });
                                         });
+                                      });
                                     });
+                                  });
                                 });
+                              });
                             });
+                          });
                         });
+                      });
                     });
+                  });
                 });
+              });
             });
+          });
         });
+      });
     });
+  });
 });
 
 // ----------------------------------------------------------------------------
@@ -250,3 +251,31 @@ openBrowser(function () {
 // and async/await makes it read like 24 plain sequential lines. Same behavior,
 // zero nesting.
 // ----------------------------------------------------------------------------
+
+//0/p
+// Step 01: Chrome browser opened
+// Step 02: Window maximized
+// Step 03: Navigated to https://app.vwo.com
+// Step 04: Cookie banner accepted
+// Step 05: Login page loaded
+// Step 06: Username entered
+// Step 07: Password entered
+// Step 08: Login button clicked
+// Step 09: Dashboard loaded
+// Step 10: Searched for 'wireless mouse'
+// Step 11: Filter 'Price: Low to High' applied
+// Step 12: Product selected from results
+// Step 13: Product details page opened
+// Step 14: Product added to cart
+// Step 15: Cart opened
+// Step 16: Quantity updated to 2
+// Step 17: Proceeded to checkout
+// Step 18: Shipping address entered
+// Step 19: Shipping method 'Express' selected
+// Step 20: Payment method 'Card' selected
+// Step 21: Card details entered
+// Step 22: Coupon 'SAVE10' applied
+// Step 23: Order placed
+// Step 24: Order confirmation #VWO-99213 verified
+
+// ✅ TEST COMPLETE — full checkout journey passed!

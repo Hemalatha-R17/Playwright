@@ -809,12 +809,12 @@ flowchart LR
 | `144_CB.js` | More callback patterns |
 | `145_CB_Fn.js` | Callback as function argument |
 | `146_PW_CB.js` | Playwright-style callbacks |
-| `147_JS_CB.js` | JS built-in callbacks (forEach, map) |
+| `147_JS_CB.js` | Async callback — why `setTimeout` runs after sync code |
 | `148_Sync_CB.js` | Synchronous callback |
-| `149_Async_CB.js` | Asynchronous callback |
-| `150_CB_Hell.js` | Callback hell introduction |
-| `151_CB_Hell_20_Steps.js` | Deep callback hell — 20 steps |
-| `152_CB_Parameter.js` | Callback with parameters |
+| `149_Async_CB.js` | Asynchronous callback with expected output |
+| `150_CB_Hell.js` | Callback hell — E2E login flow (4 steps) |
+| `151_CB_Hell_20_Steps.js` | Pyramid of Doom — 24-step full checkout journey |
+| `152_CB_Parameter.js` | Callback with parameters, `forEach` sync callback |
 | `153_CB_Return.js` | Callback with return value |
 
 </details>
