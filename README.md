@@ -103,6 +103,13 @@ flowchart LR
     Q --> R[chapter_18<br/>Async/Await]
     R --> S[chapter_19<br/>Playwright Basics]
     S --> T[chapter_20<br/>TypeScript]
+    T --> U[chapter_21<br/>OOPs]
+
+    U --> U1["✅ Class & Object"]
+    U --> U2["✅ Constructor"]
+    U --> U3["✅ Methods"]
+    U --> U4["✅ Private Fields"]
+    U --> U5["✅ Static"]
 
     style A fill:#4a90d9,color:#fff
     style B fill:#50b86c,color:#fff
@@ -124,6 +131,7 @@ flowchart LR
     style R fill:#50b86c,color:#fff
     style S fill:#4a90d9,color:#fff
     style T fill:#a855f7,color:#fff
+    style U fill:#e74c3c,color:#fff
 ```
 
 ---
@@ -152,6 +160,7 @@ flowchart LR
 | 18  | **Async / Await**            | `161_Async.js` · `162_Aysnc_P2.js` · `163_PyODom.js` · `164_Async_Ex.js` · `165_AA_Parallel.js` · `165_AA_Seq.js` · `166_IQ.js` · `167_ACLogin.js` |
 | 19  | **Playwright Basics**        | `playwright.config.ts` · `tests/` · `package.json` |
 | 20  | **TypeScript Basics**        | `logger.js` · `testutils.js` · `utils.js` · `EXPORT_IMPORT/` |
+| 21  | **OOPs**                     | `171_Class_Object.js` · `172_Class_Object2.js` · `173_Car.js` · `174_REAL_Browser.js` · `175_IQ.js` · `176_Private_Public.js` · `177_Statis.js` · `178_Statis.js` |
 
 ---
 
@@ -295,7 +304,18 @@ Playwright/
         ├── Assignment_8.js
         ├── Assignment_9.js
         ├── Assignment_10.js
-        └── Assignment_11.js
+        ├── Assignment_11.js
+        ├── Assignment_12.js
+        └── Assignment_13.js
+├── Chapter_21_OOPs/
+│   ├── 171_Class_Object.js
+│   ├── 172_Class_Object2.js
+│   ├── 173_Car.js
+│   ├── 174_REAL_Browser.js
+│   ├── 175_IQ.js
+│   ├── 176_Private_Public.js
+│   ├── 177_Statis.js
+│   └── 178_Statis.js
 ```
 
 ---
@@ -929,6 +949,35 @@ flowchart LR
 </details>
 
 <details open>
+<summary><strong>🔴 Chapter 21 — OOPs (Object-Oriented Programming)</strong></summary>
+<br>
+
+Introduces Object-Oriented Programming in JavaScript — class syntax, constructors, methods, private fields (`#`), and static members.
+
+```mermaid
+flowchart LR
+    OOP["OOPs"] --> C["Class & Object"]
+    OOP --> CON["Constructor"]
+    OOP --> M["Methods"]
+    OOP --> PF["Private Fields #"]
+    OOP --> ST["Static"]
+    style OOP fill:#e74c3c,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `171_Class_Object.js` | Basic class structure — attributes and behaviour (Person) |
+| `172_Class_Object2.js` | Constructor — auto-runs on object creation |
+| `173_Car.js` | Constructor + method — `drive()` per instance |
+| `174_REAL_Browser.js` | Real-world class — `TestCase` with `display()` method; function vs method |
+| `175_IQ.js` | Browser class — `startBrowser()` / `closeBrowser()`, instance properties |
+| `176_Private_Public.js` | Private fields (`#apiKey`) vs public fields — encapsulation |
+| `177_Statis.js` | Static fields & methods — shared across all instances (Student) |
+| `178_Statis.js` | Static fields — `nationality` shared on Person class |
+
+</details>
+
+<details open>
 <summary><strong>⚪ Assignments</strong></summary>
 <br>
 
@@ -947,6 +996,8 @@ Hands-on exercises covering HTTP status categorization, test pass/fail verdicts,
 | `Assignment_9.js` | Anagram Checker |
 | `Assignment_10.js` | Reverse Star Pattern |
 | `Assignment_11.js` | Triangle Star Pattern |
+| `Assignment_12.js` | Calculator Class — addition, subtraction, multiplication, division, modulus using OOP |
+| `Assignment_13.js` | PlaywrightClass — static/non-static fields & methods, 10 student objects with `studentDetails()` |
 
 </details>
 
