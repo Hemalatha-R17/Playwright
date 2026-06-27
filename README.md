@@ -111,6 +111,33 @@ flowchart LR
     U --> U4["✅ Private Fields"]
     U --> U5["✅ Static"]
 
+    U --> V[chapter_22<br/>Encapsulation]
+    V --> W[chapter_23<br/>Inheritance]
+    W --> X[chapter_24<br/>Polymorphism]
+    X --> Y[chapter_25<br/>OOP IQ]
+    Y --> Z[chapter_26<br/>TypeScript]
+    Z --> AA[chapter_27<br/>TS Interface]
+
+    V --> V1["✅ Private Fields"]
+    V --> V2["✅ Getter / Setter"]
+    V --> V3["✅ Guarded Setter"]
+
+    W --> W1["✅ Single Inheritance"]
+    W --> W2["✅ super() / extends"]
+    W --> W3["✅ Multi-level / Hierarchical"]
+    W --> W4["✅ Real POM"]
+
+    X --> X1["✅ Method Overriding"]
+
+    Y --> Y1["✅ Bug / default params"]
+    Y --> Y2["✅ this / chaining"]
+
+    Z --> Z1["✅ TS basics / types"]
+    Z --> Z2["✅ IQ patterns"]
+
+    AA --> AA1["✅ Interface"]
+    AA --> AA2["✅ readonly"]
+
     style A fill:#4a90d9,color:#fff
     style B fill:#50b86c,color:#fff
     style C fill:#e6a23c,color:#fff
@@ -132,6 +159,12 @@ flowchart LR
     style S fill:#4a90d9,color:#fff
     style T fill:#a855f7,color:#fff
     style U fill:#e74c3c,color:#fff
+    style V fill:#50b86c,color:#fff
+    style W fill:#e67e22,color:#fff
+    style X fill:#9b59b6,color:#fff
+    style Y fill:#e74c3c,color:#fff
+    style Z fill:#3498db,color:#fff
+    style AA fill:#1abc9c,color:#fff
 ```
 
 ---
@@ -161,6 +194,12 @@ flowchart LR
 | 19  | **Playwright Basics**        | `playwright.config.ts` · `tests/` · `package.json` |
 | 20  | **TypeScript Basics**        | `logger.js` · `testutils.js` · `utils.js` · `EXPORT_IMPORT/` |
 | 21  | **OOPs**                     | `171_Class_Object.js` · `172_Class_Object2.js` · `173_Car.js` · `174_REAL_Browser.js` · `175_IQ.js` · `176_Private_Public.js` · `177_Statis.js` · `178_Statis.js` |
+| 22  | **Encapsulation**            | `179_Ecap.js` · `180_REAK_EXAMPLE.js` · `181_Ecap_Car.js` · `182_ECap_Bank.js` |
+| 23  | **Inheritance**              | `183_Single_Inheritance.js` · `184_SI_Example.js` · `185_Single_Inheritance_Con.js` · `186_IQ.js` · `187_IQ2.js` · `188_REAL_PageObject_Model.js` · `189_Multiple_Inheritance.js` · `190_Multiple_Level_Inheritance.js` · `191_Hierarchial_Inheritance.js` |
+| 24  | **Polymorphism**             | `192_Method_Overriding.js` |
+| 25  | **OOP Interview Questions**  | `EX1.js` · `EX2.js` · `EX3.js` · `EX4.js` |
+| 26  | **TypeScript**               | `193_TS.js` · `194_TS_HelloWorld.js` · `194_TS_HelloWorld.ts` · `195_TS_Part1.ts` · `196_TS_Part2.ts` · `197_TS_Part2.ts` · `198_Part3.ts` · `199_IQ.ts` · `200_IQ.ts` |
+| 27  | **TypeScript Interface**     | `201_IF.ts` · `202_IF_Part2.ts` · `203_IF_READONLY.ts` · `204_IF_READOnly.ts` |
 
 ---
 
@@ -316,6 +355,44 @@ Playwright/
 │   ├── 176_Private_Public.js
 │   ├── 177_Statis.js
 │   └── 178_Statis.js
+├── chapter_22_Encapsulation/
+│   ├── 179_Ecap.js
+│   ├── 180_REAK_EXAMPLE.js
+│   ├── 181_Ecap_Car.js
+│   └── 182_ECap_Bank.js
+├── chapter_23_Inheritance/
+│   ├── 183_Single_Inheritance.js
+│   ├── 184_SI_Example.js
+│   ├── 185_Single_Inheritance_Con.js
+│   ├── 186_IQ.js
+│   ├── 187_IQ2.js
+│   ├── 188_REAL_PageObject_Model.js
+│   ├── 189_Multiple_Inheritance.js
+│   ├── 190_Multiple_Level_Inheritance.js
+│   └── 191_Hierarchial_Inheritance.js
+├── chapter_24_Polymorphism/
+│   └── 192_Method_Overriding.js
+├── chapter_25_OOP_Interview_Questions/
+│   ├── EX1.js
+│   ├── EX2.js
+│   ├── EX3.js
+│   └── EX4.js
+├── chapter_26_Typescript/
+│   ├── 193_TS.js
+│   ├── 194_TS_HelloWorld.js
+│   ├── 194_TS_HelloWorld.ts
+│   ├── 195_TS_Part1.ts
+│   ├── 196_TS_Part2.ts
+│   ├── 197_TS_Part2.ts
+│   ├── 198_Part3.ts
+│   ├── 199_IQ.ts
+│   └── 200_IQ.ts
+├── chapter_27_TypeScript_Interface/
+│   ├── 201_IF.ts
+│   ├── 202_IF_Part2.ts
+│   ├── 203_IF_READONLY.ts
+│   └── 204_IF_READOnly.ts
+├── tsconfig.json
 ```
 
 ---
@@ -746,6 +823,7 @@ flowchart LR
 | `121_Substring.js` | `slice`, `substring`, `substr` |
 | `122_Transform_Str.js` | `toUpperCase`, `toLowerCase`, `trim`, `replace`, `split` |
 | `123_String_Conversion.js` | Type conversion — `toString()`, `Number()`, `parseInt()`, `parseFloat()` |
+| `123_SC.js` | String conversion quick-reference cheat sheet |
 
 </details>
 
@@ -801,6 +879,7 @@ flowchart LR
 | File | Concept |
 |------|---------|
 | `138_2D_Array.js` | 2D array creation and access |
+| `139_2d.js` | 2D array basics — matrix vs grid, `grid[row][col]`, `.length` |
 | `139_2D_Array_IQ.js` | 2D array basics — matrix vs grid, row/col access |
 | `140_REAL.js` | Real-world 2D array usage — test matrix iteration |
 | `141_2d_Array_Fn.js` | Functions on 2D arrays — map/reduce, finding failures |
@@ -913,6 +992,7 @@ flowchart LR
 | `playwright.config.ts` | Full Playwright config — `testDir`, `fullyParallel`, CI retries/workers, HTML reporter, `headless: false`, trace on retry, Chromium project |
 | `package.json` | Project dependencies (`@playwright/test`) |
 | `tests/tta_cart_login.spec.ts` | Login validation (invalid creds → error), successful login → Products page, aria snapshot of all 6 cart items |
+| `tests/codegen-tta-cart.spec.ts` | Codegen-generated test — invalid login flow, error banner visibility and text assertion, TTACart heading check |
 
 </details>
 
@@ -978,6 +1058,132 @@ flowchart LR
 </details>
 
 <details open>
+<summary><strong>🟢 Chapter 22 — Encapsulation</strong></summary>
+<br>
+
+Hides internal data behind `#private` fields and exposes it **only** through public methods. The object guards its own state — a setter can validate before allowing a write.
+
+```mermaid
+flowchart LR
+    Caller -->|"deposit(100)"| M[public method]
+    Caller -.->|"account.#balance ❌"| X[blocked]
+    M -->|validates then writes| P["#balance (private)"]
+    M -->|"getBalance()"| Caller
+    style P fill:#ffebee,stroke:#c62828
+    style X fill:#ffebee,stroke:#c62828
+```
+
+| File | Concept |
+|------|---------|
+| `179_Ecap.js` | `#balance` private — `deposit()` / `getBalance()` are the only doors |
+| `180_REAK_EXAMPLE.js` | Read `#child1` via `getChild1()`, change via `setChild1()` |
+| `181_Ecap_Car.js` | `getEngine` / `setEngine` wrap a private `#engine` |
+| `182_ECap_Bank.js` | Guarded setter — `setBalance` mutates only when `isCashier` |
+
+</details>
+
+<details open>
+<summary><strong>🟠 Chapter 23 — Inheritance</strong></summary>
+<br>
+
+A child class `extends` a parent — reusing its fields/methods, adding its own, optionally overriding. `super(...)` calls the parent constructor; `super.method()` calls the parent's method.
+
+```mermaid
+classDiagram
+    BasePage <|-- LoginPage
+    BasePage <|-- DashboardPage
+    BasePage <|-- CartPage
+    BasePage : +open()
+    BasePage : +close()
+    LoginPage : +verify()
+    DashboardPage : +verify()
+    CartPage : +verify()
+```
+
+| File | Concept |
+|------|---------|
+| `183_Single_Inheritance.js` | `LoginPage extends BasePage` — child reuses `open()`/`close()` |
+| `184_SI_Example.js` | `super(name)` runs the parent constructor first |
+| `185_Single_Inheritance_Con.js` | Child `setup()` replaces parent's |
+| `186_IQ.js` | `super.method()` — call the parent's version, then add to it |
+| `187_IQ2.js` | Polymorphic loop — one array, each `execute()` differs |
+| `188_REAL_PageObject_Model.js` | Real POM — `BasePage` → `Login`/`Dashboard`/`Cart`, each `verify()` |
+| `189_Multiple_Inheritance.js` | `extends A, B` is a `SyntaxError` — JS forbids it |
+| `190_Multiple_Level_Inheritance.js` | Multi-level — `BasePage` → `AuthPage` → `AdminPage` |
+| `191_Hierarchial_Inheritance.js` | Hierarchical — one parent, many children |
+
+</details>
+
+<details open>
+<summary><strong>🟣 Chapter 24 — Polymorphism</strong></summary>
+<br>
+
+"Many forms." The same method name (`setup()`, `execute()`, `verify()`) behaves differently depending on the object's actual class. No `if (type === ...)` ladders needed.
+
+```mermaid
+flowchart LR
+    R["runner.forEach(t => t.execute())"] --> U["UnitTest.execute()"]
+    R --> A["APITest.execute()"]
+    R --> E["E2ETest.execute()"]
+    style R fill:#9b59b6,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `192_Method_Overriding.js` | Same `setup()` name — subclass supplies its own body |
+
+</details>
+
+<details open>
+<summary><strong>🔴 Chapter 25 — OOP Interview Questions</strong></summary>
+<br>
+
+Four warm-up drills tying together classes, constructors, `this`, and method chaining.
+
+| File | Concept |
+|------|---------|
+| `EX1.js` | `Bug` class — fields + `display()` method |
+| `EX2.js` | Constructor default values — `constructor(name = "staging", port = 3000)` |
+| `EX3.js` | `this` per object — each instance carries its own `this.name` |
+| `EX4.js` | Method chaining — `return this` lets you chain `.increment().display()` |
+
+</details>
+
+<details open>
+<summary><strong>🔵 Chapter 26 — TypeScript</strong></summary>
+<br>
+
+Introduction to TypeScript — static types, type annotations, and running `.ts` files with Node.js.
+
+| File | Concept |
+|------|---------|
+| `193_TS.js` | JavaScript baseline used as TS comparison reference |
+| `194_TS_HelloWorld.js` / `.ts` | First TypeScript file — type-annotated variables |
+| `195_TS_Part1.ts` | TypeScript types — `string`, `number`, `boolean` |
+| `196_TS_Part2.ts` | TypeScript — Part 2 topics |
+| `197_TS_Part2.ts` | TypeScript — Part 2 continued |
+| `198_Part3.ts` | TypeScript — Part 3 |
+| `199_IQ.ts` | TypeScript interview question |
+| `200_IQ.ts` | TypeScript interview question — continued |
+
+</details>
+
+<details open>
+<summary><strong>🟢 Chapter 27 — TypeScript Interface</strong></summary>
+<br>
+
+TypeScript interfaces — defining object shapes, optional properties, and `readonly` constraints.
+
+| File | Concept |
+|------|---------|
+| `201_IF.ts` | Interface basics — defining object shape with `interface` |
+| `202_IF_Part2.ts` | Interface — Part 2 |
+| `203_IF_READONLY.ts` | `readonly` properties — prevent mutation after assignment |
+| `204_IF_READOnly.ts` | `readonly` — continued examples |
+
+</details>
+
+<details open>
 <summary><strong>⚪ Assignments</strong></summary>
 <br>
 
@@ -998,6 +1204,7 @@ Hands-on exercises covering HTTP status categorization, test pass/fail verdicts,
 | `Assignment_11.js` | Triangle Star Pattern |
 | `Assignment_12.js` | Calculator Class — addition, subtraction, multiplication, division, modulus using OOP |
 | `Assignment_13.js` | PlaywrightClass — static/non-static fields & methods, 10 student objects with `studentDetails()` |
+| `Assignment_14.js` | Token class — private `#value` field, `getToken()` and `getMasked()` with partial masking (`***XXXX`) |
 
 </details>
 
