@@ -8,3 +8,7 @@ function getFailedCodes(codes: number[]): number[] {
 
 console.log("All Codes", responseCode);
 console.log("Failed Codes", getFailedCodes(responseCode));
+
+// o / p:
+// All Codes[200, 201, 404, 500, 302, 403]
+// Failed Codes[404, 500, 403]

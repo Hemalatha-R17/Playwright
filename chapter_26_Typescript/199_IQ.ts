@@ -14,3 +14,9 @@ console.log(buildEndpoint("https://api.com", "/users"));
 console.log("200 is success:", isSuccessCode(200));
 console.log("404 is success:", isSuccessCode(404));
 logTestStep("Navigate to login page");
+
+// o / p
+// https://api.com/users
+// 200 is success: true
+// 404 is success: false
+// [STEP] Navigate to login page

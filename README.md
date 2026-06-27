@@ -23,9 +23,9 @@ flowchart LR
     C --> D[Chapter 04<br/>Java Concepts]
     D --> E[Chapter 05<br/>Literals]
     E --> F[Chapter 06<br/>Operators]
-    F --> G[chapter_07<br/>If-Else]
-    G --> H[chapter_08<br/>Switch Statement]
-    H --> I[chapter_09<br/>User Input]
+    F --> G[Chapter 07<br/>If-Else]
+    G --> H[Chapter 08<br/>Switch Statement]
+    H --> I[Chapter 09<br/>User Input]
 
     A --> A1["✅ 01_Basics.js"]
     A --> A2["✅ 02_JS_Verify_Setup.js"]
@@ -61,8 +61,8 @@ flowchart LR
     H --> H2["✅ Break / Default"]
     H --> H3["✅ Group / IQ patterns"]
 
-    I --> J[chapter_10<br/>Loops]
-    J --> K[chapter_11<br/>Arrays]
+    I --> J[Chapter 10<br/>Loops]
+    J --> K[Chapter 11<br/>Arrays]
 
     J --> J1["✅ for loop"]
     J --> J2["✅ while loop"]
@@ -84,7 +84,7 @@ flowchart LR
     K --> K12["✅ Concat"]
     K --> K13["✅ Array Checking"]
 
-    K --> L[chapter_12<br/>Functions]
+    K --> L[Chapter 12<br/>Functions]
     L --> L1["✅ Basic Functions"]
     L --> L2["✅ Fn With Param No Return"]
     L --> L3["✅ Fn Without Param With Return"]
@@ -95,15 +95,15 @@ flowchart LR
     L --> L8["✅ IIFE / Default Params"]
     L --> L9["✅ Closures / HOF"]
 
-    L --> M[chapter_13<br/>Strings]
-    M --> N[chapter_14<br/>Objects]
-    N --> O[chapter_15<br/>2D Arrays]
-    O --> P[chapter_16<br/>Callbacks]
-    P --> Q[chapter_17<br/>Promises]
-    Q --> R[chapter_18<br/>Async/Await]
-    R --> S[chapter_19<br/>Playwright Basics]
-    S --> T[chapter_20<br/>TypeScript]
-    T --> U[chapter_21<br/>OOPs]
+    L --> M[Chapter 13<br/>Strings]
+    M --> N[Chapter 14<br/>Objects]
+    N --> O[Chapter 15<br/>2D Arrays]
+    O --> P[Chapter 16<br/>Callbacks]
+    P --> Q[Chapter 17<br/>Promises]
+    Q --> R[Chapter 18<br/>Async/Await]
+    R --> S[Chapter 19<br/>Playwright Basics]
+    S --> T[Chapter 20<br/>TypeScript]
+    T --> U[Chapter 21<br/>OOPs]
 
     U --> U1["✅ Class & Object"]
     U --> U2["✅ Constructor"]
@@ -111,12 +111,12 @@ flowchart LR
     U --> U4["✅ Private Fields"]
     U --> U5["✅ Static"]
 
-    U --> V[chapter_22<br/>Encapsulation]
-    V --> W[chapter_23<br/>Inheritance]
-    W --> X[chapter_24<br/>Polymorphism]
-    X --> Y[chapter_25<br/>OOP IQ]
-    Y --> Z[chapter_26<br/>TypeScript]
-    Z --> AA[chapter_27<br/>TS Interface]
+    U --> V[Chapter 22<br/>Encapsulation]
+    V --> W[Chapter 23<br/>Inheritance]
+    W --> X[Chapter 24<br/>Polymorphism]
+    X --> Y[Chapter 25<br/>OOP IQ]
+    Y --> Z[Chapter 26<br/>TypeScript]
+    Z --> AA[Chapter 27<br/>TS Interface]
 
     V --> V1["✅ Private Fields"]
     V --> V2["✅ Getter / Setter"]
@@ -246,7 +246,7 @@ Playwright/
 │   ├── 27_String.js
 │   ├── 28_Template_Literal.js
 │   └── 29_Backtick_single_double.js
-├── chapter_06_Operator/
+├── Chapter_06_Operator/
 │   ├── 30_Operator.js
 │   ├── 31_Arithmetic_OP.js
 │   ├── 32_Modulus_OP.js
@@ -266,7 +266,7 @@ Playwright/
 │   ├── 46_IQ_INCREMENT_D.js
 │   ├── 47_Advance_ID_.js
 │   └── README.md
-├── chapter_07_If_else/
+├── Chapter_07_If_else/
 │   ├── 48_IF_ESLE.js
 │   ├── 49_If_elseif_else.js
 │   ├── 50_REAL_IF_ELSE.js
@@ -279,7 +279,7 @@ Playwright/
 │   ├── 57_Grade_Calc.js
 │   ├── 58_LEAP_YEAR.js
 │   └── README.md
-├── chapter_08_Switch_Statement/
+├── Chapter_08_Switch_Statement/
 │   ├── 59_Switch.js
 │   ├── 60_No_Break.js
 │   ├── 61_Default.js
@@ -290,12 +290,12 @@ Playwright/
 │   ├── 66_IQ3.js
 │   ├── 67_IQ4.js
 │   └── README.md
-├── chapter_09_UserInput/
+├── Chapter_09_UserInput/
 │   ├── 68_User_Input.js
 │   ├── 69_Node_readline.js
 │   ├── 70_prompt_sync.js
 │   └── README.md
-├── chapter_10_Loops/
+├── Chapter_10_Loops/
 │   ├── 71_For_loop.js
 │   ├── 72_For_loop.js
 │   ├── 73_For_Loop2.js
@@ -346,7 +346,7 @@ Playwright/
         ├── Assignment_11.js
         ├── Assignment_12.js
         └── Assignment_13.js
-├── Chapter_21_OOPs/
+├── Chapter_21_Classes_and_Objects/
 │   ├── 171_Class_Object.js
 │   ├── 172_Class_Object2.js
 │   ├── 173_Car.js
@@ -355,12 +355,12 @@ Playwright/
 │   ├── 176_Private_Public.js
 │   ├── 177_Statis.js
 │   └── 178_Statis.js
-├── chapter_22_Encapsulation/
+├── Chapter_22_Encapsulation/
 │   ├── 179_Ecap.js
 │   ├── 180_REAK_EXAMPLE.js
 │   ├── 181_Ecap_Car.js
 │   └── 182_ECap_Bank.js
-├── chapter_23_Inheritance/
+├── Chapter_23_Inheritance/
 │   ├── 183_Single_Inheritance.js
 │   ├── 184_SI_Example.js
 │   ├── 185_Single_Inheritance_Con.js
@@ -370,14 +370,14 @@ Playwright/
 │   ├── 189_Multiple_Inheritance.js
 │   ├── 190_Multiple_Level_Inheritance.js
 │   └── 191_Hierarchial_Inheritance.js
-├── chapter_24_Polymorphism/
+├── Chapter_24_Polymorphism/
 │   └── 192_Method_Overriding.js
-├── chapter_25_OOP_Interview_Questions/
+├── Chapter_25_OOP_Interview_Questions/
 │   ├── EX1.js
 │   ├── EX2.js
 │   ├── EX3.js
 │   └── EX4.js
-├── chapter_26_Typescript/
+├── Chapter_26_Typescript/
 │   ├── 193_TS.js
 │   ├── 194_TS_HelloWorld.js
 │   ├── 194_TS_HelloWorld.ts
@@ -387,7 +387,7 @@ Playwright/
 │   ├── 198_Part3.ts
 │   ├── 199_IQ.ts
 │   └── 200_IQ.ts
-├── chapter_27_TypeScript_Interface/
+├── Chapter_27_TypeScript_Interface/
 │   ├── 201_IF.ts
 │   ├── 202_IF_Part2.ts
 │   ├── 203_IF_READONLY.ts

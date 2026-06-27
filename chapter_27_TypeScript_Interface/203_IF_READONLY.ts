@@ -21,3 +21,8 @@ console.log("Headers:", response.headers);
 
 // response.statusCode = 404;
 response.body = "dasdadas";
+
+// o / p
+// Status: 200
+// Body: { "user": "admin" }
+// Headers: undefined

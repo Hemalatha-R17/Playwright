@@ -27,3 +27,7 @@ console.log("TC-" + test2.id + ": " + test2.name + " → " + test2.status);
 //     name: "Login with valid credentials",
 //     status: "PASS",
 // };
+
+// o / p:
+// TC - 1: Login with valid credentials → PASS
+// TC - 2: Login with invalid password → FAIL

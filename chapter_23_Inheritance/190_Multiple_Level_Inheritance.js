@@ -2,30 +2,35 @@
 // BasePage -> AuthPape -> AdminPage
 
 class BasePage {
-    constructor(name) {
-        this.name = name;
-    }
+  constructor(name) {
+    this.name = name;
+  }
 
-    open() {
-        console.log("[OPEN] " + this.name);
-    }
+  open() {
+    console.log("[OPEN] " + this.name);
+  }
 }
 class AuthPage extends BasePage {
-    login(user) {
-        console.log("[LOGIN] " + user);
-    }
+  login(user) {
+    console.log("[LOGIN] " + user);
+  }
 }
 
 class AdminPage extends AuthPage {
-    constructor() {
-        super("Admin Panel");
-    }
+  constructor() {
+    super("Admin Panel");
+  }
 
-    manageUsers() {
-        console.log("[ADMIN] Managing users");
-    }
+  manageUsers() {
+    console.log("[ADMIN] Managing users");
+  }
 }
 let admin = new AdminPage();
 admin.open();
 admin.login("superadmin");
 admin.manageUsers();
+
+// o / p
+// [OPEN] Admin Panel
+// [LOGIN] superadmin
+// [ADMIN] Managing users
