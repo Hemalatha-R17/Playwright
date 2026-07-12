@@ -1,0 +1,14 @@
+{
+  // Native (TC39 Stage 3) decorators: (originalMethod, context) => replacement.
+  // experimentalDecorators must stay OFF for these to work - it switches TS to
+  // legacy (target, propertyKey, descriptor) decorators and silently ignores
+  // any function a method decorator returns.
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": []
+  }
+}

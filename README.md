@@ -117,6 +117,11 @@ flowchart LR
     X --> Y[Chapter 25<br/>OOP IQ]
     Y --> Z[Chapter 26<br/>TypeScript]
     Z --> AA[Chapter 27<br/>TS Interface]
+    AA --> AB[Chapter 28<br/>Enums]
+    AB --> AC[Chapter 29<br/>Generics]
+    AC --> AD[Chapter 30<br/>PPP]
+    AD --> AE[Chapter 31<br/>Type/Decorators]
+    AE --> AF[Chapter 32<br/>Playwright Fund.]
 
     V --> V1["✅ Private Fields"]
     V --> V2["✅ Getter / Setter"]
@@ -137,6 +142,14 @@ flowchart LR
 
     AA --> AA1["✅ Interface"]
     AA --> AA2["✅ readonly"]
+
+    AB --> AB1["✅ Enum values"]
+    AC --> AC1["✅ Generic Functions"]
+    AD --> AD1["✅ private/protected"]
+    AE --> AE1["✅ as / Override"]
+    AE --> AE2["✅ Decorators"]
+    AF --> AF1["✅ playwright.config.ts"]
+    AF --> AF2["✅ First test"]
 
     style A fill:#4a90d9,color:#fff
     style B fill:#50b86c,color:#fff
@@ -165,6 +178,11 @@ flowchart LR
     style Y fill:#e74c3c,color:#fff
     style Z fill:#3498db,color:#fff
     style AA fill:#1abc9c,color:#fff
+    style AB fill:#e91e63,color:#fff
+    style AC fill:#a855f7,color:#fff
+    style AD fill:#e74c3c,color:#fff
+    style AE fill:#f39c12,color:#fff
+    style AF fill:#4a90d9,color:#fff
 ```
 
 ---
@@ -199,7 +217,12 @@ flowchart LR
 | 24  | **Polymorphism**             | `192_Method_Overriding.js` |
 | 25  | **OOP Interview Questions**  | `EX1.js` · `EX2.js` · `EX3.js` · `EX4.js` |
 | 26  | **TypeScript**               | `193_TS.js` · `194_TS_HelloWorld.js` · `194_TS_HelloWorld.ts` · `195_TS_Part1.ts` · `196_TS_Part2.ts` · `197_TS_Part2.ts` · `198_Part3.ts` · `199_IQ.ts` · `200_IQ.ts` |
-| 27  | **TypeScript Interface**     | `201_IF.ts` · `202_IF_Part2.ts` · `203_IF_READONLY.ts` · `204_IF_READOnly.ts` |
+| 27  | **TypeScript Interface**     | `201_IF.ts` · `202_IF_Part2.ts` · `203_IF_READONLY.ts` · `204_IF_READOnly.ts` · `205_Interfaces.ts` · `206_Hooks.ts` · `207_Bug REPORT.ts` · `208_TestConfig.ts` · `209_REAL_EXAMPLE.ts` · `210_Class_Interface.ts` |
+| 28  | **Enums**                    | `211_ENUM.ts` · `212_Enum_Fn.ts` · `213_ENUM.ts` · `214_API_.ts` |
+| 29  | **TypeScript Generics**      | `215_Generic.ts` · `216_Generic_Class.ts` · `217_Generic_API_RESPONSE.ts` |
+| 30  | **Private / Public / Protected** | `218_PPP.ts` · `219_PageObjectModel.ts` · `220_READONLY.ts` · `221_Abstract_Class.ts` |
+| 31  | **Type Override & Decorators** | `222_Type_As.ts` · `223_Type_Alias_As.ts` · `224_Override.ts` · `225_IQ.ts` · `226_Decorator.ts` · `227_Decortors_2.ts` · `228_Multiple_Decor.ts` |
+| 32  | **Playwright Fundamentals**  | `playwright.config.ts` · `tests/example.spec.ts` · `package.json` |
 
 ---
 
@@ -391,7 +414,42 @@ Playwright/
 │   ├── 201_IF.ts
 │   ├── 202_IF_Part2.ts
 │   ├── 203_IF_READONLY.ts
-│   └── 204_IF_READOnly.ts
+│   ├── 204_IF_READOnly.ts
+│   ├── 205_Interfaces.ts
+│   ├── 206_Hooks.ts
+│   ├── 207_Bug REPORT.ts
+│   ├── 208_TestConfig.ts
+│   ├── 209_REAL_EXAMPLE.ts
+│   └── 210_Class_Interface.ts
+├── Chapter_28_ENUM/
+│   ├── 211_ENUM.ts
+│   ├── 212_Enum_Fn.ts
+│   ├── 213_ENUM.ts
+│   └── 214_API_.ts
+├── Chapter_29_Typescript_Generic/
+│   ├── 215_Generic.ts
+│   ├── 216_Generic_Class.ts
+│   └── 217_Generic_API_RESPONSE.ts
+├── Chapter_30_PRIVATE_PUBLIC_PROTECTED/
+│   ├── 218_PPP.ts
+│   ├── 219_PageObjectModel.ts
+│   ├── 220_READONLY.ts
+│   └── 221_Abstract_Class.ts
+├── Chapter_31_Type_Overide_Decortors/
+│   ├── 222_Type_As.ts
+│   ├── 223_Type_Alias_As.ts
+│   ├── 224_Override.ts
+│   ├── 225_IQ.ts
+│   ├── 226_Decorator.ts
+│   ├── 227_Decortors_2.ts
+│   ├── 228_Multiple_Decor.ts
+│   └── tsconfig.json
+├── Chapter_32_Playwright_Fundamentals/
+│   ├── playwright.config.ts
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── tests/
+│       └── example.spec.ts
 ├── tsconfig.json
 ```
 
@@ -1180,6 +1238,130 @@ TypeScript interfaces — defining object shapes, optional properties, and `read
 | `202_IF_Part2.ts` | Interface — Part 2 |
 | `203_IF_READONLY.ts` | `readonly` properties — prevent mutation after assignment |
 | `204_IF_READOnly.ts` | `readonly` — continued examples |
+| `205_Interfaces.ts` | Interface with method signatures + arrow-function property syntax (`Calculator`) |
+| `206_Hooks.ts` | Interface modeling Playwright-style test hooks |
+| `207_Bug REPORT.ts` | Interface for a structured bug report shape |
+| `208_TestConfig.ts` | Interface for test configuration objects |
+| `209_REAL_EXAMPLE.ts` | Real-world interface usage example |
+| `210_Class_Interface.ts` | A class `implements` an interface |
+
+</details>
+
+<details open>
+<summary><strong>🟤 Chapter 28 — Enums</strong></summary>
+<br>
+
+TypeScript `enum` — naming a fixed set of related constants (test status, environments) instead of using raw strings.
+
+```mermaid
+flowchart LR
+    E["enum TestStatus"] --> P["Pass = 'PASS'"]
+    E --> F["Fail = 'FAIL'"]
+    E --> S["Skip = 'SKIP'"]
+    style E fill:#e91e63,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `211_ENUM.ts` | String enum — `TestStatus.Pass` |
+| `212_Enum_Fn.ts` | Using an enum value as a function parameter type |
+| `213_ENUM.ts` | More enum patterns |
+| `214_API_.ts` | Enum applied to a real API-style example |
+
+</details>
+
+<details open>
+<summary><strong>🟣 Chapter 29 — TypeScript Generics</strong></summary>
+<br>
+
+Generics (`<T>`) let a function or class work with any type while keeping full type safety — no `any`, no duplicated overloads.
+
+```mermaid
+flowchart LR
+    G["getFirstResult&lt;T&gt;(results: T[])"] --> N["&lt;number&gt;([200,400,500]) → number"]
+    G --> S["&lt;string&gt;(['Login','Signup']) → string"]
+    style G fill:#a855f7,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `215_Generic.ts` | Generic function `getFirstResult<T>` — non-null assertion (`!`) |
+| `216_Generic_Class.ts` | Generic class |
+| `217_Generic_API_RESPONSE.ts` | Generic `ApiResponse<T>` shape for API data |
+
+</details>
+
+<details open>
+<summary><strong>🔴 Chapter 30 — Private / Public / Protected</strong></summary>
+<br>
+
+TypeScript access modifiers — `public` (default, open everywhere), `private` (class-only), `protected` (class + subclasses) — plus `readonly` and `abstract` classes.
+
+```mermaid
+classDiagram
+    APIClient <|-- UserAPIClient
+    APIClient : +baseURL string
+    APIClient : -apiKey string
+    APIClient : #timeout number
+    APIClient : -getAuthHeader()
+    APIClient : +sendRequest()
+    UserAPIClient : +getUsers()
+```
+
+| File | Concept |
+|------|---------|
+| `218_PPP.ts` | `public`/`private`/`protected` fields — subclass can read `protected`, not `private` |
+| `219_PageObjectModel.ts` | Access modifiers applied to a Page Object Model |
+| `220_READONLY.ts` | `readonly` fields — set once, immutable after |
+| `221_Abstract_Class.ts` | `abstract class` — can't be instantiated directly, forces subclasses to implement |
+
+</details>
+
+<details open>
+<summary><strong>🟠 Chapter 31 — Type Override & Decorators</strong></summary>
+<br>
+
+Type assertions (`as`), type aliases, method `override`, and experimental class/method decorators.
+
+```mermaid
+flowchart LR
+    U["unknown"] -->|"as elementI"| T["typed object"]
+    B["base method"] -->|"override"| D["derived method"]
+    C["class"] -->|"@decorator"| CD["enhanced class"]
+    style U fill:#f39c12,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `222_Type_As.ts` | `as` assertion — narrow `unknown` to a known interface shape |
+| `223_Type_Alias_As.ts` | `type` alias combined with `as` assertions |
+| `224_Override.ts` | `override` keyword on subclass methods |
+| `225_IQ.ts` | Type override interview question |
+| `226_Decorator.ts` | Class decorator basics |
+| `227_Decortors_2.ts` | Decorators — part 2 |
+| `228_Multiple_Decor.ts` | Stacking multiple decorators on one class/method |
+
+</details>
+
+<details open>
+<summary><strong>🔵 Chapter 32 — Playwright Fundamentals</strong></summary>
+<br>
+
+A fresh, standalone Playwright TypeScript project (own `package.json`/`tsconfig.json`) — config setup and a first real browser test against a live site.
+
+```mermaid
+flowchart LR
+    C["playwright.config.ts"] --> T["tests/example.spec.ts"]
+    T --> G["page.goto(TTA Cart)"]
+    G --> A["expect(page).toHaveTitle(...)"]
+    style C fill:#4a90d9,color:#fff
+```
+
+| File | Concept |
+|------|---------|
+| `playwright.config.ts` | Chromium project, HTML reporter, trace on first retry, CI-aware retries/workers |
+| `tsconfig.json` | Local override of the repo's strict root config (`types: ["node"]`, relaxed `verbatimModuleSyntax`/`exactOptionalPropertyTypes`) so `process.env` and CommonJS `import` syntax type-check |
+| `tests/example.spec.ts` | First test — navigates to TTA Cart and asserts the page title |
 
 </details>
 
